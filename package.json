@@ -23,5 +23,12 @@
   },
   "peerDependencies": {
     "react": "^17.0.2"
+  },
+  "scripts": {
+    "eslint": "eslint ./",
+    "test": "echo 'No tests implemented'"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0"
   }
 }
