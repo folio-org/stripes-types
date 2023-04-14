@@ -1,0 +1,15 @@
+/node_modules/
+/lib/backup/
+/nbproject/private/
+atom.cson
+.DS_Store
+yarn-error.log
+debug.log
+artifacts
+.npmrc
+.out
+/storybook-static/
+.vscode
+.idea
+yarn.lock
+.prettierrc

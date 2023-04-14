@@ -1,0 +1,27 @@
+{
+  "name": "@folio/stripes-types",
+  "version": "1.0.0",
+  "description": "Typings for the Stripes framework",
+  "license": "Apache-2.0",
+  "repository": "folio-org/stripes-types",
+  "publishConfig": {
+    "registry": "https://repository.folio.org/repository/npm-folio/"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "exports": {
+    "./components": {
+      "types": {
+        "default": "./components/index.d.ts"
+      }
+    }
+  },
+  "dependencies": {
+    "@folio/eslint-config-stripes": "^6.4.0",
+    "@types/react": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  }
+}
