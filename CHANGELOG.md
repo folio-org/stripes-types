@@ -2,6 +2,8 @@
 
 ## [1.0.1] (https://github.com/folio-org/stripes-types/tree/v1.0.1) (IN PROGRESS)
 
+- Fix `eslint-config-stripes` dependency pre-release version
+
 ## [1.0.0] (https://github.com/folio-org/stripes-types/tree/v1.0.0) (2023-04-19)
 
 - Create initial repository
