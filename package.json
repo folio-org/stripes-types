@@ -19,9 +19,11 @@
   },
   "dependencies": {
     "@folio/eslint-config-stripes": "^6.5.0",
-    "@types/react": "^17.0.2"
+    "@types/react": "^17.0.2",
+    "react-final-form": "^6.5.9"
   },
   "peerDependencies": {
+    "@types/react": "^17.0.2",
     "react": "^17.0.2"
   },
   "scripts": {
