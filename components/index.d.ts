@@ -1,3 +1,4 @@
+// targeted to stripes-components v11.0.4
 export const AutoSuggest: any;
 export const Badge: any;
 export const Button: any;
