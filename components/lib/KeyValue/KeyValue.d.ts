@@ -1,5 +1,5 @@
 import { FunctionComponent, ReactNode } from 'react';
-import { RequireExactlyOne } from '../../utils/typeUtils';
+import { RequireExactlyOne } from 'type-fest';
 
 export type KeyValueProps = {
   label: ReactNode;
