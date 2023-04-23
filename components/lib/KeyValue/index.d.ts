@@ -1,2 +1,1 @@
-declare const KeyValue: any;
-export default KeyValue;
+export { default, KeyValueProps } from './KeyValue';
