@@ -16,5 +16,5 @@ export interface BadgeProps {
  * @example
  * <Badge color="red">3</Badge>
  */
-export const Badge: FunctionComponent<BadgeProps>;
+declare const Badge: FunctionComponent<BadgeProps>;
 export default Badge;

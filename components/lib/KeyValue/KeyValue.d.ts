@@ -27,4 +27,5 @@ export type KeyValueProps = {
  *   <span data-test-id="my-test-string">Some node</span>
  * </KeyValue>
  */
+declare const KeyValue: FunctionComponent<KeyValueProps>;
 export default KeyValue;

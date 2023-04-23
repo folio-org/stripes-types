@@ -29,4 +29,5 @@ export interface LabelProps {
  *   My label
  * </Label>
  */
+declare const Label: FunctionComponent<LabelProps>;
 export default Label;
