@@ -143,37 +143,52 @@ export interface MultiColumnListBaseProps<
 export type MultiColumnListHeaderClickProps<
   DataShape,
   OmittedColumns extends string
-> = RequireAllOrNone<{
-  /** Columns to disallow clicking */
-  nonInteractiveHeaders?: (keyof Omit<DataShape, OmittedColumns>)[];
-  /** Callback for when a column is clicked */
-  onHeaderClick: (
-    e: MouseEvent,
-    meta: { name: keyof Omit<DataShape, OmittedColumns>; alias: ReactNode }
-  ) => void;
-}>;
+> = RequireAllOrNone<
+  {
+    /** Columns to disallow clicking */
+    nonInteractiveHeaders?: (keyof Omit<DataShape, OmittedColumns>)[];
+    /** Callback for when a column is clicked */
+    onHeaderClick: (
+      e: MouseEvent,
+      meta: { name: keyof Omit<DataShape, OmittedColumns>; alias: ReactNode }
+    ) => void;
+  },
+  'nonInteractiveHeaders' | 'onHeaderClick'
+>;
 
 export type MultiColumnListSpecialPagingTypes =
-  | RequireAllOrNone<{
-      pagingType: 'click';
-      /** If there is no more data available */
-      dataEndReached?: boolean;
-      /** A custom label for the load more button */
-      pagingButtonLabel?: ReactNode;
-    }>
-  | RequireAllOrNone<{
-      pagingType: 'prev-next';
-      pagingCanGoNext?: boolean;
-      pagingCanGoPrevious?: boolean;
-      hidePageIndices?: boolean;
-    }>;
+  | RequireAllOrNone<
+      {
+        pagingType: 'click';
+        /** If there is no more data available */
+        dataEndReached?: boolean;
+        /** A custom label for the load more button */
+        pagingButtonLabel?: ReactNode;
+      },
+      'pagingType' | 'dataEndReached' | 'pagingButtonLabel'
+    >
+  | RequireAllOrNone<
+      {
+        pagingType: 'prev-next';
+        pagingCanGoNext?: boolean;
+        pagingCanGoPrevious?: boolean;
+        hidePageIndices?: boolean;
+      },
+      | 'pagingType'
+      | 'pagingCanGoNext'
+      | 'pagingCanGoPrevious'
+      | 'hidePageIndices'
+    >;
 
-export type MultiColumnListMarkProps = RequireAllOrNone<{
-  /** Scroll to a given item */
-  itemToView: PositionObject;
-  /** Callback for when a row from itemToView could not be focused */
-  onMarkReset?: () => void;
-}>;
+export type MultiColumnListMarkProps = RequireAllOrNone<
+  {
+    /** Scroll to a given item */
+    itemToView: PositionObject;
+    /** Callback for when a row from itemToView could not be focused */
+    onMarkReset?: () => void;
+  },
+  'itemToView' | 'onMarkReset'
+>;
 
 export type MultiColumnListProps<
   DataShape,
