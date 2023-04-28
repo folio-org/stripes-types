@@ -1,2 +1,1 @@
-declare const Dropdown: any;
-export default Dropdown;
+export { default as Dropdown, DropdownProps } from './Dropdown';
