@@ -1,2 +1,1 @@
-declare const Button: any;
-export default Button;
+export { default, ButtonProps } from './Button';
