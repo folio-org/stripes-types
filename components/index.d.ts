@@ -51,15 +51,24 @@ export { default as EndOfList } from './lib/MultiColumnList/EndOfList';
 export { default as List } from './lib/List';
 
 /* layout containers */
-export { default as Pane } from './lib/Pane';
-export { default as PaneHeaderIconButton } from './lib/PaneHeaderIconButton';
-export { default as PaneBackLink } from './lib/PaneBackLink';
-export { default as PaneCloseLink } from './lib/PaneCloseLink';
-export { default as PaneHeader } from './lib/PaneHeader';
-export { default as PaneFooter } from './lib/PaneFooter';
-export { default as PaneSubheader } from './lib/PaneSubheader';
-export { default as PaneMenu } from './lib/PaneMenu';
-export { default as Paneset } from './lib/Paneset';
+export { default as Pane, PaneProps } from './lib/Pane';
+export { default as PaneBackLink, PaneBackLinkProps } from './lib/PaneBackLink';
+export {
+  default as PaneCloseLink,
+  PaneCloseLinkProps,
+} from './lib/PaneCloseLink';
+export { default as PaneFooter, PaneFooterProps } from './lib/PaneFooter';
+export { default as PaneHeader, PaneHeaderProps } from './lib/PaneHeader';
+export {
+  default as PaneHeaderIconButton,
+  PaneHeaderIconButtonProps,
+} from './lib/PaneHeaderIconButton';
+export { default as PaneMenu, PaneMenuProps } from './lib/PaneMenu';
+export {
+  default as PaneSubheader,
+  PaneSubheaderProps,
+} from './lib/PaneSubheader';
+export { default as Paneset, PanesetProps } from './lib/Paneset';
 export { default as Layer } from './lib/Layer';
 export { Grid, Row, Col } from './lib/LayoutGrid';
 export { default as Layout } from './lib/Layout';

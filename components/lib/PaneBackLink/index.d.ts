@@ -1,2 +1,1 @@
-declare const PaneBackLink: any;
-export default PaneBackLink;
+export { default, PaneBackLinkProps } from './PaneBackLink';

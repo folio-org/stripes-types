@@ -1,2 +1,1 @@
-declare const Paneset: any;
-export default Paneset;
+export { default, PanesetProps } from './Paneset';

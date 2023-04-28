@@ -1,2 +1,1 @@
-declare const PaneMenu: any;
-export default PaneMenu;
+export { default, PaneMenuProps } from './PaneMenu';

@@ -1,2 +1,1 @@
-declare const PaneSubheader: any;
-export default PaneSubheader;
+export { default, PaneSubheaderProps } from './PaneSubheader';

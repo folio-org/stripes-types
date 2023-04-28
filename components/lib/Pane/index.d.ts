@@ -1,2 +1,1 @@
-declare const Pane: any;
-export default Pane;
+export { default, PaneProps } from './Pane';

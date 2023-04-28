@@ -1,2 +1,1 @@
-declare const PaneHeaderIconButton: any;
-export default PaneHeaderIconButton;
+export { default, PaneHeaderIconButtonProps } from './PaneHeaderIconButton';
