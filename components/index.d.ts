@@ -12,7 +12,10 @@ export type {
   staticFirstWeekDay,
   staticLangCountryCodes,
 } from './lib/Datepicker';
-export { getLocaleDateFormat, getLocalizedTimeFormatInfo } from './util/dateTimeUtils';
+export {
+  getLocaleDateFormat,
+  getLocalizedTimeFormatInfo,
+} from './util/dateTimeUtils';
 export { default as DateRangeWrapper } from './lib/DateRangeWrapper';
 export { default as FormattedDate } from './lib/FormattedDate';
 export { default as FormattedTime } from './lib/FormattedTime';
@@ -38,7 +41,12 @@ export { default as Popper, AVAILABLE_PLACEMENTS } from './lib/Popper';
 export { default as Card } from './lib/Card';
 export { default as KeyboardShortcutsModal } from './lib/KeyboardShortcutsModal';
 export { default as KeyValue } from './lib/KeyValue';
-export { default as MultiColumnList, DefaultMCLRowFormatter } from './lib/MultiColumnList';
+export {
+  default as MultiColumnList,
+  DefaultMCLRowFormatter,
+  MultiColumnListRowFormatterProps,
+  MultiColumnListProps,
+} from './lib/MultiColumnList';
 export { default as EndOfList } from './lib/MultiColumnList/EndOfList';
 export { default as List } from './lib/List';
 
@@ -154,9 +162,17 @@ export {
   currenciesOptions,
 } from './util/currencies';
 
-export { default as countries, countriesByCode, countryCodes } from './util/countries';
+export {
+  default as countries,
+  countriesByCode,
+  countryCodes,
+} from './util/countries';
 
-export { formattedLanguageName, languageOptions, default as languages } from './util/languages';
+export {
+  formattedLanguageName,
+  languageOptions,
+  default as languages,
+} from './util/languages';
 
 export { default as nativeChangeFieldValue } from './util/nativeChangeFieldValue';
 
