@@ -1,2 +1,1 @@
-declare const Badge: any;
-export default Badge;
+export { default, BadgeProps } from './Badge';
