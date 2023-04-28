@@ -1,2 +1,1 @@
-declare const Timepicker: any;
-export default Timepicker;
+export { default, TimepickerProps } from './Timepicker';
