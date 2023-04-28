@@ -1,5 +1,5 @@
 import Popper from 'popper.js';
-import React, {
+import {
   AriaAttributes,
   Component,
   ElementType,
