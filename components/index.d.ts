@@ -1,18 +1,22 @@
 /* form elements */
 export { default as AutoSuggest } from './lib/AutoSuggest';
-export { default as Badge } from './lib/Badge';
-export { default as Button } from './lib/Button';
+export { default as Badge, BadgeProps } from './lib/Badge';
+export { default as Button, ButtonProps } from './lib/Button';
 export { default as ButtonGroup } from './lib/ButtonGroup';
 export { default as Checkbox } from './lib/Checkbox';
 export { default as CurrencySelect } from './lib/CurrencySelect';
 export { default as CountrySelection } from './lib/CountrySelection';
 export type {
   default as Datepicker,
+  DatepickerProps,
   Calendar,
   staticFirstWeekDay,
   staticLangCountryCodes,
 } from './lib/Datepicker';
-export { getLocaleDateFormat, getLocalizedTimeFormatInfo } from './util/dateTimeUtils';
+export {
+  getLocaleDateFormat,
+  getLocalizedTimeFormatInfo,
+} from './util/dateTimeUtils';
 export { default as DateRangeWrapper } from './lib/DateRangeWrapper';
 export { default as FormattedDate } from './lib/FormattedDate';
 export { default as FormattedTime } from './lib/FormattedTime';
@@ -27,7 +31,7 @@ export { default as Select } from './lib/Select';
 export { default as Spinner } from './lib/Spinner';
 export { default as TextArea } from './lib/TextArea';
 export { default as TextField } from './lib/TextField';
-export { default as Timepicker } from './lib/Timepicker';
+export { default as Timepicker, TimepickerProps } from './lib/Timepicker';
 export { default as Tooltip } from './lib/Tooltip';
 export { default as Editor } from './lib/Editor';
 export { default as MultiSelection } from './lib/MultiSelection';
@@ -38,20 +42,34 @@ export { default as Popper, AVAILABLE_PLACEMENTS } from './lib/Popper';
 export { default as Card } from './lib/Card';
 export { default as KeyboardShortcutsModal } from './lib/KeyboardShortcutsModal';
 export { default as KeyValue } from './lib/KeyValue';
-export { default as MultiColumnList, DefaultMCLRowFormatter } from './lib/MultiColumnList';
+export {
+  default as MultiColumnList,
+  DefaultMCLRowFormatter,
+  MultiColumnListRowFormatterProps,
+  MultiColumnListProps,
+} from './lib/MultiColumnList';
 export { default as EndOfList } from './lib/MultiColumnList/EndOfList';
 export { default as List } from './lib/List';
 
 /* layout containers */
-export { default as Pane } from './lib/Pane';
-export { default as PaneHeaderIconButton } from './lib/PaneHeaderIconButton';
-export { default as PaneBackLink } from './lib/PaneBackLink';
-export { default as PaneCloseLink } from './lib/PaneCloseLink';
-export { default as PaneHeader } from './lib/PaneHeader';
-export { default as PaneFooter } from './lib/PaneFooter';
-export { default as PaneSubheader } from './lib/PaneSubheader';
-export { default as PaneMenu } from './lib/PaneMenu';
-export { default as Paneset } from './lib/Paneset';
+export { default as Pane, PaneProps } from './lib/Pane';
+export { default as PaneBackLink, PaneBackLinkProps } from './lib/PaneBackLink';
+export {
+  default as PaneCloseLink,
+  PaneCloseLinkProps,
+} from './lib/PaneCloseLink';
+export { default as PaneFooter, PaneFooterProps } from './lib/PaneFooter';
+export { default as PaneHeader, PaneHeaderProps } from './lib/PaneHeader';
+export {
+  default as PaneHeaderIconButton,
+  PaneHeaderIconButtonProps,
+} from './lib/PaneHeaderIconButton';
+export { default as PaneMenu, PaneMenuProps } from './lib/PaneMenu';
+export {
+  default as PaneSubheader,
+  PaneSubheaderProps,
+} from './lib/PaneSubheader';
+export { default as Paneset, PanesetProps } from './lib/Paneset';
 export { default as Layer } from './lib/Layer';
 export { Grid, Row, Col } from './lib/LayoutGrid';
 export { default as Layout } from './lib/Layout';
@@ -69,13 +87,13 @@ export {
 
 /* misc */
 export { default as Icon } from './lib/Icon';
-export { default as IconButton } from './lib/IconButton';
+export { default as IconButton, IconButtonProps } from './lib/IconButton';
 export { default as MessageBanner } from './lib/MessageBanner';
 export { default as Modal } from './lib/Modal';
 export { default as ModalFooter } from './lib/ModalFooter';
 export { default as Avatar } from './lib/Avatar';
 export { default as Callout, CalloutElement } from './lib/Callout';
-export { default as Dropdown } from './lib/Dropdown';
+export { default as Dropdown, DropdownProps } from './lib/Dropdown';
 export { default as DropdownMenu } from './lib/DropdownMenu';
 export { default as DropdownButton } from './lib/DropdownButton';
 export { default as MenuSection } from './lib/MenuSection';
@@ -154,9 +172,17 @@ export {
   currenciesOptions,
 } from './util/currencies';
 
-export { default as countries, countriesByCode, countryCodes } from './util/countries';
+export {
+  default as countries,
+  countriesByCode,
+  countryCodes,
+} from './util/countries';
 
-export { formattedLanguageName, languageOptions, default as languages } from './util/languages';
+export {
+  formattedLanguageName,
+  languageOptions,
+  default as languages,
+} from './util/languages';
 
 export { default as nativeChangeFieldValue } from './util/nativeChangeFieldValue';
 

@@ -1,2 +1,1 @@
-declare const PaneCloseLink: any;
-export default PaneCloseLink;
+export { default, PaneCloseLinkProps } from './PaneCloseLink';

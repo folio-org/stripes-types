@@ -1,2 +1,1 @@
-declare const PaneFooter: any;
-export default PaneFooter;
+export { default, PaneFooterProps } from './PaneFooter';

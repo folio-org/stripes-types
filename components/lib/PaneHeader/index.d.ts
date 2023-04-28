@@ -1,2 +1,1 @@
-declare const PaneHeader: any;
-export default PaneHeader;
+export { default, PaneHeaderProps } from './PaneHeader';
