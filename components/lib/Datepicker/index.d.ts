@@ -1,6 +1,6 @@
-export const Calendar: any;
-export const staticFirstWeekDay: any;
-export const staticLangCountryCodes: any;
+export { default, DatepickerProps } from './Datepicker';
+export { default as staticFirstWeekDay } from './staticFirstWeekDay';
+export { default as staticLangCountryCodes } from './staticLangCountryCodes';
 
-declare const Datepicker: any;
-export default Datepicker;
+// TODO
+export const Calendar: any;
