@@ -1,2 +1,1 @@
-declare const IconButton: any;
-export default IconButton;
+export { default, IconButtonProps } from './IconButton';

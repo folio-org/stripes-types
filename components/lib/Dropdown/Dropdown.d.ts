@@ -156,5 +156,4 @@ export type DropdownProps = DropdownBaseProps &
  * />
  * ```
  */
-export class Dropdown extends Component<DropdownProps> {}
-export default Dropdown;
+export default class Dropdown extends Component<DropdownProps> {}
