@@ -31,7 +31,7 @@
     "@types/react": "^17.0.2"
   },
   "scripts": {
-    "eslint": "eslint ./",
+    "lint": "eslint ./",
     "test": "tsc --noEmit --strict components/index.d.ts core/index.d.ts final-form/index.d.ts smart-components/index.d.ts"
   },
   "devDependencies": {
