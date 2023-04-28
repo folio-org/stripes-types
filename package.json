@@ -19,10 +19,11 @@
   },
   "dependencies": {
     "@folio/eslint-config-stripes": "^6.4.0",
-    "@folio/stripes-react-hotkeys": "^3.0.100000026",
+    "@folio/stripes-react-hotkeys": "^3.0.0",
     "@types/react": "^17.0.2",
     "@types/react-router-dom": "^5.2.0",
     "final-form": "^4.20.9",
+    "moment": "^2.29.4",
     "popper.js": "^1.16.1",
     "react-final-form": "^6.5.9",
     "react-intl": "^6.4.1",
