@@ -6,7 +6,7 @@ import {
   FocusEventHandler,
   ReactNode,
   RefObject,
-} from 'react';
+} from 'react
 import { Merge } from 'type-fest';
 import { TextFieldProps } from '../TextField';
 
