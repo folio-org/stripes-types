@@ -8,8 +8,8 @@ import {
 } from 'react';
 import { RequireAllOrNone } from 'type-fest';
 import { BadgeProps } from '../Badge/Badge';
-import { IconType } from '../Icon/Icon';
 import { ButtonBaseProps } from '../Button/Button';
+import { IconType } from '../Icon/Icon';
 
 export interface IconButtonBaseProps
   extends AriaAttributes,
@@ -75,13 +75,13 @@ export interface IconButtonBadgeProps {
    * Sets the badge color
    * @see badgeCount for the required content of the badge
    */
-  badgeColor?: BadgeProps['color'];
+  badgeColor: BadgeProps['color'];
   /** Adds a badge with the given contents */
   badgeCount: BadgeProps['children'];
 }
 
 export type IconButtonProps = IconButtonBaseProps &
-  RequireAllOrNone<IconButtonBadgeProps> &
+  RequireAllOrNone<IconButtonBadgeProps, 'badgeColor' | 'badgeCount'> &
   (JSX.IntrinsicElements['a'] | JSX.IntrinsicElements['button']);
 
 /**

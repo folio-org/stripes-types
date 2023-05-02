@@ -122,7 +122,7 @@ export interface IconProps extends AriaAttributes {
   tabIndex?: number;
 
   /** Adds content next to the icon, useful for adding a label */
-  children: ReactNode;
+  children?: ReactNode;
   /** Sets the position of the icon, for use with children */
   iconPosition?: 'start' | 'end';
 }
