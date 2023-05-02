@@ -7,11 +7,10 @@ import {
   ReactNode,
   RefObject,
 } from 'react';
-import { FieldRenderProps } from 'react-final-form';
+import { Merge } from 'type-fest';
+import { TextFieldProps } from '../TextField';
 
-export interface DatepickerBaseProps
-  extends AriaAttributes,
-    FieldRenderProps<string> {
+export interface DatepickerProps extends AriaAttributes {
   /** If the field should auto-focus on mount */
   autoFocus?: boolean;
   /** How backend dates should be parsed, e.g. `"ISO 8601"` */
@@ -66,28 +65,23 @@ export interface DatepickerBaseProps
   usePortal?: boolean;
   /** The field's value */
   value?: string;
+
+  /** Determines if the datepicker's value will be the formatted local string or one ready for the backend */
+  outputBackendValue?: boolean;
+  /** Formats a date for the backend */
+  outputFormatter?: (date: Moment) => string;
+
+  // TODO: reference react-final-form FieldRenderProps<string>
+  input: any;
+  meta: any;
 }
 
-export type DatepickerOutputProps =
-  | {
-      // /** Determines if the datepicker's value will be the formatted local string or one ready for the backend */
-      outputBackendValue?: false;
-      outputFormatter?: never;
-    }
-  | {
-      // /** Determines if the datepicker's value will be the formatted local string or one ready for the backend */
-      outputBackendValue: true;
-      // /** Formats a date for the backend */
-      outputFormatter?: (date: Moment) => string;
-    };
-
-// only allow `outputFormatter` if `outputBackendValue` is true
-export type DatepickerProps = DatepickerBaseProps & DatepickerOutputProps;
-
 /**
- * A picker for dates with an optional calendar popup
+ * A picker for dates with an optional calendar popup.
+ *
  * @example
  * <Datepicker />
+ * @example
  * // or pass as component within a form...
  * <Field component={Datepicker} />
  * @example
@@ -97,4 +91,6 @@ export type DatepickerProps = DatepickerBaseProps & DatepickerOutputProps;
  *   onChange={handleDateChange}
  * />
  */
-export default class Datepicker extends Component<DatepickerProps> {}
+export default class Datepicker extends Component<
+  Merge<Partial<TextFieldProps>, DatepickerProps>
+> {}

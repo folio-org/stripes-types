@@ -5,6 +5,7 @@ import {
   ReactNode,
   RefAttributes,
 } from 'react';
+import { MergeExclusive } from 'type-fest';
 import { DefaultPaneFooterProps } from './DefaultPaneFooter';
 
 export interface PaneFooterBaseProps {
@@ -21,7 +22,7 @@ export interface PaneFooterChildrenContentsProps {
 
 export interface PaneFooterBuiltinContentsProps
   extends Omit<DefaultPaneFooterProps, 'className'> {
-  innerClassName: DefaultPaneFooterProps['className'];
+  innerClassName?: DefaultPaneFooterProps['className'];
   /** Render at the start (left in LTR languages) of the footer */
   renderStart?: ReactNode;
   /** Render at the end (right in LTR languages) of the footer */
@@ -29,7 +30,10 @@ export interface PaneFooterBuiltinContentsProps
 }
 
 export type PaneFooterProps = PaneFooterBaseProps &
-  (PaneFooterChildrenContentsProps | PaneFooterBuiltinContentsProps);
+  MergeExclusive<
+    PaneFooterChildrenContentsProps,
+    PaneFooterBuiltinContentsProps
+  >;
 
 /**
  * Renders a footer at the bottom of a pane.  Props may be used to render

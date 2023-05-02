@@ -1,2 +1,1 @@
-declare const TextField: any;
-export default TextField;
+export { default, TextFieldProps } from './TextField';

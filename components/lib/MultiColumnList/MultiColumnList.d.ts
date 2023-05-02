@@ -102,10 +102,7 @@ export interface MultiColumnListBaseProps<
   onScroll?: UIEventHandler<HTMLDivElement>;
   /** The amount to request at a time from `onNeedMoreData` */
   pageAmount?: number;
-  /** The method for pagination */
-  pagingType?: PagingType;
   /** A custom formatter for an entire row */
-  // TODO: add default formatter types/extension here
   rowFormatter?: FunctionComponent<MultiColumnListRowFormatterProps<DataShape>>;
   /** Keys in the data that should not be rendered */
   rowMetadata?: OmittedColumns[];
@@ -138,47 +135,33 @@ export interface MultiColumnListBaseProps<
   width?: number;
   /** If cells should wrap within themselves */
   wrapCells?: boolean;
+
+  /** Columns to disallow clicking */
+  nonInteractiveHeaders?: (keyof Omit<DataShape, OmittedColumns>)[];
+  /** Callback for when a column is clicked */
+  onHeaderClick?: (
+    e: MouseEvent,
+    meta: { name: keyof Omit<DataShape, OmittedColumns>; alias: ReactNode }
+  ) => void;
 }
 
-export type MultiColumnListHeaderClickProps<
-  DataShape,
-  OmittedColumns extends string
-> = RequireAllOrNone<
-  {
-    /** Columns to disallow clicking */
-    nonInteractiveHeaders?: (keyof Omit<DataShape, OmittedColumns>)[];
-    /** Callback for when a column is clicked */
-    onHeaderClick: (
-      e: MouseEvent,
-      meta: { name: keyof Omit<DataShape, OmittedColumns>; alias: ReactNode }
-    ) => void;
-  },
-  'nonInteractiveHeaders' | 'onHeaderClick'
->;
-
-export type MultiColumnListSpecialPagingTypes =
-  | RequireAllOrNone<
-      {
-        pagingType: 'click';
-        /** If there is no more data available */
-        dataEndReached?: boolean;
-        /** A custom label for the load more button */
-        pagingButtonLabel?: ReactNode;
-      },
-      'pagingType' | 'dataEndReached' | 'pagingButtonLabel'
-    >
-  | RequireAllOrNone<
-      {
-        pagingType: 'prev-next';
-        pagingCanGoNext?: boolean;
-        pagingCanGoPrevious?: boolean;
-        hidePageIndices?: boolean;
-      },
-      | 'pagingType'
-      | 'pagingCanGoNext'
-      | 'pagingCanGoPrevious'
-      | 'hidePageIndices'
-    >;
+export type MultiColumnListPagingTypes =
+  | {
+      pagingType: 'click';
+      /** If there is no more data available */
+      dataEndReached?: boolean;
+      /** A custom label for the load more button */
+      pagingButtonLabel?: ReactNode;
+    }
+  | {
+      pagingType: 'prev-next';
+      pagingCanGoNext?: boolean;
+      pagingCanGoPrevious?: boolean;
+      hidePageIndices?: boolean;
+    }
+  | {
+      pagingType?: 'click' | 'scroll';
+    };
 
 export type MultiColumnListMarkProps = RequireAllOrNone<
   {
@@ -194,8 +177,7 @@ export type MultiColumnListProps<
   DataShape,
   OmittedColumns extends string
 > = MultiColumnListBaseProps<DataShape, OmittedColumns> &
-  MultiColumnListHeaderClickProps<DataShape, OmittedColumns> &
-  MultiColumnListSpecialPagingTypes &
+  MultiColumnListPagingTypes &
   MultiColumnListMarkProps;
 
 /**

@@ -1,2 +1,1 @@
-declare const Select: any;
-export default Select;
+export { default, SelectProps, OptionType as SelectOptionType } from './Select';

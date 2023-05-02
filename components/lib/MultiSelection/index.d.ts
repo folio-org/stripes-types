@@ -1,2 +1,5 @@
-declare const MultiSelection: any;
-export default MultiSelection;
+export {
+  default,
+  MultiSelectionProps,
+  MultiSelectionDefaultOptionType,
+} from './MultiSelection';
