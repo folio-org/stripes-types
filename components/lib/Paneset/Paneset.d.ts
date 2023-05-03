@@ -94,5 +94,4 @@ export type PanePositionProps =
  *   Pane Content
  * </Pane>
  */
-export class Paneset extends Component<PanesetProps> {}
-export default Paneset;
+export default class Paneset extends Component<PanesetProps> {}

@@ -143,5 +143,4 @@ export interface PaneProps extends AriaAttributes {
  *   Pane Content
  * </Pane>
  */
-export class Pane extends Component<PaneProps> {}
-export default Pane;
+export default class Pane extends Component<PaneProps> {}
