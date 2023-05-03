@@ -202,8 +202,7 @@ export type MultiColumnListProps<
  *   }}
  * />
  */
-export class MultiColumnList<
+export default class MultiColumnList<
   DataShape,
   OmittedColumns extends string = ''
 > extends Component<MultiColumnListProps<DataShape, OmittedColumns>> {}
-export default MultiColumnList;
