@@ -1,6 +1,10 @@
 # Change history for stripes-types
 
-## [1.0.1] (https://github.com/folio-org/stripes-types/tree/v1.0.1) (IN PROGRESS)
+## [1.0.2] (https://github.com/folio-org/stripes-types/tree/v1.0.2) (2023-05-02)
+
+- [STCOM-1152] Add some `stripes-components` typings
+
+## [1.0.1] (https://github.com/folio-org/stripes-types/tree/v1.0.1) (2023-04-19)
 
 - Fix `eslint-config-stripes` dependency pre-release version
 
