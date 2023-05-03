@@ -197,7 +197,7 @@ jobs:
         with:
           args: >
             -Dsonar.organization=folio-org
-            -Dsonar.projectKey=folio-org_${{ github.event.repository.name }}
+            -Dsonar.projectKey=org.folio:${{ github.event.repository.name }}
             -Dsonar.projectName=${{ github.event.repository.name }}
             -Dsonar.sources=${{ env.SQ_ROOT_DIR }}
             -Dsonar.language=js
