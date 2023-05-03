@@ -1,6 +1,6 @@
 {
   "name": "@folio/stripes-types",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Typings for the Stripes framework",
   "license": "Apache-2.0",
   "repository": "folio-org/stripes-types",
