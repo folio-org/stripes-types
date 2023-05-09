@@ -88,6 +88,5 @@ export interface CheckboxProps
  *   label="Bananas are green?"
  * />
  */
-
 declare const Checkbox: FunctionComponent<CheckboxProps>;
 export default Checkbox;

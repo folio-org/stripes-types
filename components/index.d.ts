@@ -3,7 +3,7 @@ export { default as AutoSuggest } from './lib/AutoSuggest';
 export { default as Badge, BadgeProps } from './lib/Badge';
 export { default as Button, ButtonProps } from './lib/Button';
 export { default as ButtonGroup } from './lib/ButtonGroup';
-export { default as Checkbox } from './lib/Checkbox';
+export { default as Checkbox, CheckboxProps } from './lib/Checkbox';
 export { default as CurrencySelect } from './lib/CurrencySelect';
 export { default as CountrySelection } from './lib/CountrySelection';
 export {
