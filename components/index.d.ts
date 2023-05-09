@@ -22,7 +22,7 @@ export { default as FormattedDate } from './lib/FormattedDate';
 export { default as FormattedTime } from './lib/FormattedTime';
 export { default as EmptyMessage } from './lib/EmptyMessage';
 export { default as FormattedUTCDate } from './lib/FormattedUTCDate';
-export { default as Label } from './lib/Label';
+export { default as Label, LabelProps } from './lib/Label';
 export { default as TextLink } from './lib/TextLink';
 export { Loading, LoadingPane, LoadingView } from './lib/Loading';
 export { default as RadioButton } from './lib/RadioButton';

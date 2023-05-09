@@ -1,2 +1,1 @@
-declare const Label: any;
-export default Label;
+export { default, LabelProps } from './Label';
