@@ -1,2 +1,1 @@
-declare const Checkbox: any;
-export default Checkbox;
+export { default, CheckboxProps } from './Checkbox';
