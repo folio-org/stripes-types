@@ -7,7 +7,6 @@ import {
   ReactNode,
   RefObject,
 } from 'react';
-import { FieldRenderProps } from 'react-final-form';
 
 export interface CheckboxProps
   extends AriaAttributes,
