@@ -43,7 +43,7 @@ export { default as RepeatableField } from './lib/RepeatableField';
 export { default as Popper, AVAILABLE_PLACEMENTS } from './lib/Popper';
 
 /* data containers */
-export { default as Card } from './lib/Card';
+export { default as Card, CardProps } from './lib/Card';
 export { default as KeyboardShortcutsModal } from './lib/KeyboardShortcutsModal';
 export { default as KeyValue } from './lib/KeyValue';
 export {

@@ -1,2 +1,1 @@
-declare const Card: any;
-export default Card;
+export { default, CardProps } from './Card';
