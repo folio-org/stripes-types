@@ -1,5 +1,6 @@
 import {
   AriaAttributes,
+  CSSProperties,
   ChangeEventHandler,
   FocusEventHandler,
   FunctionComponent,
@@ -32,7 +33,7 @@ export interface RadioButtonProps
   /** Add a class to the label */
   labelClass?: string;
   /** Add style to the label */
-  labelStyle?: string;
+  labelStyle?: CSSProperties;
   /** If the radio button should be rendered without a margin bottom */
   marginBottom0?: boolean;
   /** Set a name for the input */
