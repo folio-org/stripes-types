@@ -1,2 +1,1 @@
-declare const RadioButton: any;
-export default RadioButton;
+export { default, RadioButtonProps } from './RadioButton';
