@@ -26,6 +26,7 @@
     "moment": "^2.29.4",
     "popper.js": "^1.16.1",
     "react-final-form": "^6.5.9",
+    "react-flexbox-grid": "^2.1.2",
     "react-intl": "^6.4.1",
     "type-fest": "^3.9.0"
   },
