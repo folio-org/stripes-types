@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactNode } from 'react';
+import { FunctionComponent, ReactNode } from 'react';
 
 export interface DefaultAccordionHeaderProps {
   /** If the header/button should autofocus on mount */
