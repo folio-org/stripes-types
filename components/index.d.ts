@@ -81,12 +81,19 @@ export { default as LayoutBox } from './lib/LayoutBox';
 export { default as LayoutHeader } from './lib/LayoutHeader';
 export {
   Accordion,
+  AccordionProps,
   AccordionSet,
+  AccordionSetProps,
   AccordionStatus,
+  AccordionStatusProps,
   DefaultAccordionHeader,
+  DefaultAccordionHeaderProps,
   FilterAccordionHeader,
+  FilterAccordionHeaderProps,
   ExpandAllButton,
+  ExpandAllButtonProps,
   expandAllFunction,
+  AccordionStatusRecord,
 } from './lib/Accordion';
 
 /* misc */
