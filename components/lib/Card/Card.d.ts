@@ -39,5 +39,5 @@ export interface CardProps extends AriaAttributes {
  *  <Layout className="textCentered">No organization added</Layout>
  * </Card>
  */
-declare const KeyValue: FunctionComponent<CardProps>;
-export default KeyValue;
+declare const Card: FunctionComponent<CardProps>;
+export default Card;
