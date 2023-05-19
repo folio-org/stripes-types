@@ -1,5 +1,10 @@
 # Change history for stripes-types
 
+## [1.0.3] (https://github.com/folio-org/stripes-types/tree/v1.0.3) (2023-05-18)
+
+- [STCOM-1152] Add additional `stripes-components` typings
+- [STCOR-714] Add `useOkapiKy` typings from `stripes-core`
+
 ## [1.0.2] (https://github.com/folio-org/stripes-types/tree/v1.0.2) (2023-05-02)
 
 - [STCOM-1152] Add some `stripes-components` typings
