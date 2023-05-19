@@ -53,6 +53,6 @@
   },
   "scripts": {
     "lint": "eslint ./",
-    "test": "tsc --noEmit --strict components/index.d.ts core/index.d.ts final-form/index.d.ts smart-components/index.d.ts"
+    "test": "tsc -p tsconfig.json"
   }
 }
