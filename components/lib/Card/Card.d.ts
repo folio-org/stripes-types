@@ -18,11 +18,14 @@ export interface CardProps extends AriaAttributes {
   /** Props to be passed into the card's header components */
   headerProps?: object;
   /** The component at the start of the card's header */
-  headerStart: ReactNode | string;
+  headerStart?: ReactNode | string;
   /** Remove bottom margin */
   marginBottom0?: boolean;
   /** Apply a border-radius to the card for rounded borders */
   roundedBorder?: boolean;
+
+  /** If headerComponent is provided, extra props will be spread on */
+  [prop: string]: unknown;
 }
 
 /**
@@ -39,5 +42,5 @@ export interface CardProps extends AriaAttributes {
  *  <Layout className="textCentered">No organization added</Layout>
  * </Card>
  */
-declare const KeyValue: FunctionComponent<CardProps>;
-export default KeyValue;
+declare const Card: FunctionComponent<CardProps>;
+export default Card;
