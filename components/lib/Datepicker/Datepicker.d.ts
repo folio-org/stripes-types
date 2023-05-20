@@ -36,11 +36,11 @@ export interface DatepickerProps extends AriaAttributes {
   /** Popper modifiers */
   modifiers?: Popper.Modifiers;
   /** Fired when the user clicks out of/deselects the control */
-  onBlur?: FocusEventHandler;
+  onBlur?: FocusEventHandler<HTMLInputElement>;
   /** Fired anytime internal state changes */
   onChange?: (e: Event, formatted: string, dateString: string) => void;
   /** Fired when the user clicks into the control */
-  onFocus?: FocusEventHandler;
+  onFocus?: FocusEventHandler<HTMLInputElement>;
   /** When a date is chosen on the calendar */
   onSetDate?: (date: Moment) => void;
   /** Parses a date for local display in the text field */
