@@ -62,13 +62,13 @@ export interface TextFieldProps<FieldType extends string | number = string>
   /** The input's name */
   name?: string;
   /** Fired when the user clicks out of/deselects the control */
-  onBlur?: FocusEventHandler;
+  onBlur?: FocusEventHandler<HTMLInputElement>;
   /** Fired anytime internal state changes */
   onChange?: ChangeEventHandler<HTMLInputElement>;
   /** Callback for when the input is cleared */
   onClearField?: () => void;
   /** Fired when the user clicks into the control */
-  onFocus?: FocusEventHandler;
+  onFocus?: FocusEventHandler<HTMLInputElement>;
   /** If the control is readonly */
   readOnly?: boolean;
   /** If the field is required */
