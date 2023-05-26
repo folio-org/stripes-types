@@ -1,8 +1,9 @@
 // targeted to stripes-core v9.0.8
 export const RootContext: any;
 export const withRoot: any;
-export const CalloutContext: any;
-export const useCallout: any;
+
+export { CalloutContext, useCallout } from './src/CalloutContext';
+
 export const stripesShape: any;
 export const withStripes: any;
 export const useStripes: any;
