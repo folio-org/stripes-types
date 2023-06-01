@@ -5,7 +5,7 @@ import { RequireExactlyOne } from 'type-fest';
  * The default option type to be used, contains a label, potentially a value, and an option to disable
  */
 export interface OptionType<ValueType = never> {
-  label: string;
+  label: ReactNode;
   value: ValueType;
   disabled?: boolean;
 }
