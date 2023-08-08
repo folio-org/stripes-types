@@ -12,7 +12,7 @@ export interface CardProps extends AriaAttributes {
   /** Add a custom class to the card's header */
   headerClass?: string;
   /** The component that represents the card's header */
-  headerComponent?: ReactNode | string;
+  headerComponent?: ReactNode | string | FunctionComponent;
   /** The component at the end of the card's header */
   headerEnd?: ReactNode | string;
   /** Props to be passed into the card's header components */
