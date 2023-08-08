@@ -81,12 +81,19 @@ export { default as LayoutBox } from './lib/LayoutBox';
 export { default as LayoutHeader } from './lib/LayoutHeader';
 export {
   Accordion,
+  AccordionProps,
   AccordionSet,
+  AccordionSetProps,
   AccordionStatus,
+  AccordionStatusProps,
   DefaultAccordionHeader,
+  DefaultAccordionHeaderProps,
   FilterAccordionHeader,
+  FilterAccordionHeaderProps,
   ExpandAllButton,
+  ExpandAllButtonProps,
   expandAllFunction,
+  AccordionStatusRecord,
 } from './lib/Accordion';
 
 /* misc */
@@ -98,7 +105,7 @@ export { default as ModalFooter } from './lib/ModalFooter';
 export { default as Avatar } from './lib/Avatar';
 export { default as Callout, CalloutElement } from './lib/Callout';
 export { default as Dropdown, DropdownProps } from './lib/Dropdown';
-export { default as DropdownMenu } from './lib/DropdownMenu';
+export { default as DropdownMenu, DropdownMenuProps } from './lib/DropdownMenu';
 export { default as DropdownButton } from './lib/DropdownButton';
 export { default as MenuSection } from './lib/MenuSection';
 export { default as FocusLink } from './lib/FocusLink';

@@ -76,7 +76,7 @@ export interface MultiSelectionProps<
   /** Modifiers for how the overlay should render */
   modifiers?: Popper.Modifiers;
   /** Fired when the user clicks out of/deselects the control */
-  onBlur?: FocusEventHandler;
+  onBlur?: FocusEventHandler<HTMLInputElement>;
   /** Fired anytime internal state changes */
   onChange?: (selectedItems: OptionType[]) => void;
   /** Fired when an item is removed */
