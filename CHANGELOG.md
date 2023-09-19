@@ -1,5 +1,9 @@
 # Change history for stripes-types
 
+## 2.0.0 in progress
+
+* [FOLIO-3876] React 18
+
 ## [1.0.3] (https://github.com/folio-org/stripes-types/tree/v1.0.3) (2023-05-18)
 
 - [STCOM-1152] Add additional `stripes-components` typings
