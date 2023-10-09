@@ -15,8 +15,9 @@ export interface SettingsProps {
   paneTitleRef?: RefObject<HTMLDivElement>;
   location: Location;
   showSettings?: boolean;
-  stripes: StripesType;
   forceRender: number;
+  // omitted as its exported wrapped by withStripes
+  // stripes: StripesType;
 }
 
-export class Settings extends Component<SettingsProps> {}
+export default class Settings extends Component<SettingsProps> {}
