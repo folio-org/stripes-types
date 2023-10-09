@@ -38,7 +38,9 @@ export const removeNsKeys: any;
 export const parseFilters: any;
 export const deparseFilters: any;
 export const buildUrl: any;
-export const Settings: any;
+
+export { default as Settings, SettingsProps } from './lib/Settings';
+
 export const Tags: any;
 export const withTags: any;
 export const TagsForm: any;
