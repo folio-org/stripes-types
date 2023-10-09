@@ -25,7 +25,7 @@ export interface StripesType {
   hasInterface(
     interface: string,
     version?: string,
-  ): boolean | string | undefined;
+  ): boolean | string | 0 | undefined;
 
   // TODO: fill this in with additional properties from Stripes object
   // https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#the-stripes-object
@@ -39,7 +39,7 @@ export class Stripes implements StripesType {
   hasInterface(
     interface: string,
     version?: string,
-  ): boolean | string | undefined;
+  ): boolean | string | 0 | undefined;
 
   [key: string]: unknown;
 }
