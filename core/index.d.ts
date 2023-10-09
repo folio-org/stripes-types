@@ -2,7 +2,7 @@
 export const RootContext: any;
 export const withRoot: any;
 
-export { CalloutContext, useCallout } from './src/CalloutContext';
+export { CalloutContext, CalloutContextType, useCallout } from './src/CalloutContext';
 export { StripesType, stripesShape, default as Stripes } from './src/Stripes';
 export { StripesContext, useStripes, withStripes } from './src/StripesContext';
 
