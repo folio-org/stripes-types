@@ -3,11 +3,9 @@ export const RootContext: any;
 export const withRoot: any;
 
 export { CalloutContext, useCallout } from './src/CalloutContext';
+export { StripesType, stripesShape, default as Stripes } from './src/Stripes';
+export { StripesContext, useStripes, withStripes } from './src/StripesContext';
 
-export const stripesShape: any;
-export const withStripes: any;
-export const useStripes: any;
-export const StripesContext: any;
 export const useModules: any;
 export const withModule: any;
 export const withModules: any;
