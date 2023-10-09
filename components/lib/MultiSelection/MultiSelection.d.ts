@@ -62,7 +62,10 @@ export interface MultiSelectionProps<
     list: OptionType[]
   ) => { renderedItems: OptionType[]; exactMatch?: boolean } | Promise<void>;
   /** A custom formatter to render each option */
-  formatter?: (option: OptionType, searchTerm: string | undefined) => ReactNode;
+  formatter?: (props: {
+    option: OptionType;
+    searchTerm: string | undefined;
+  }) => ReactNode;
   /** Adds a custom ID to the control */
   id?: string;
   /** If true, adds valid styles to the field */
