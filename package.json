@@ -22,7 +22,6 @@
     "ky": "^0.33.3",
     "moment": "^2.29.4",
     "popper.js": "^1.16.1",
-    "react-flexbox-grid": "^2.1.2",
     "type-fest": "^3.9.0"
   },
   "devDependencies": {
