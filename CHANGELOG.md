@@ -1,6 +1,6 @@
 # Change history for stripes-types
 
-## 2.0.1 in progress
+## [2.0.1](https://github.com/folio-org/stripes-types/tree/v2.0.1) (2023-10-13)
 
 * [STRIPES-893] align stripes-components LayoutGrid to avoid `react-flexbox-grid`
 
