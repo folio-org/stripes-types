@@ -1,0 +1,1 @@
+export const DonorsContainer: any;
