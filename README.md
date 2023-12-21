@@ -21,7 +21,7 @@ With this current situation, there's not too much we can do to make everyone hap
 
 Currently, the recommended way to use Stripes components in react-final-form without sacrificing typings is via the render prop or as a child:
 
-```tsx
+```jsx
 import { Field } from 'react-final-form';
 import { TextField } from '@folio/stripes/components';
 
