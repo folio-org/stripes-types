@@ -15,6 +15,21 @@
       "types": {
         "default": "./components/index.d.ts"
       }
+    },
+    "./core": {
+      "types": {
+        "default": "./core/index.d.ts"
+      }
+    },
+    "./final-form": {
+      "types": {
+        "default": "./final-form/index.d.ts"
+      }
+    },
+    "./smart-components": {
+      "types": {
+        "default": "./smart-components/index.d.ts"
+      }
     }
   },
   "dependencies": {
