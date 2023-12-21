@@ -60,8 +60,8 @@ export interface SelectBaseProps<ValueType> {
   warning?: ReactNode;
 
   // TODO: reference react-final-form FieldRenderProps<OptionType[]>
-  input: any;
-  meta: any;
+  input?: any;
+  meta?: any;
 }
 
 export type SelectProps<ValueType> = RequireExactlyOne<
@@ -91,6 +91,4 @@ export type SelectProps<ValueType> = RequireExactlyOne<
  *   ]}
  * />
  */
-export default class Select<ValueType = never> extends Component<
-  SelectProps<ValueType>
-> {}
+export default class Select<ValueType = never> extends Component<SelectProps<ValueType>> {}

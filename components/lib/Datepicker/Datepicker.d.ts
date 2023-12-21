@@ -1,12 +1,6 @@
 import { Moment } from 'moment';
 import Popper from 'popper.js';
-import {
-  AriaAttributes,
-  Component,
-  FocusEventHandler,
-  ReactNode,
-  RefObject,
-} from 'react';
+import { AriaAttributes, Component, FocusEventHandler, ReactNode, RefObject } from 'react';
 import { Merge } from 'type-fest';
 import { TextFieldProps } from '../TextField';
 
@@ -72,8 +66,8 @@ export interface DatepickerProps extends AriaAttributes {
   outputFormatter?: (date: Moment) => string;
 
   // TODO: reference react-final-form FieldRenderProps<string>
-  input: any;
-  meta: any;
+  input?: any;
+  meta?: any;
 }
 
 /**

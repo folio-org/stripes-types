@@ -8,9 +8,7 @@ import {
   RefObject,
 } from 'react';
 
-export interface CheckboxProps
-  extends AriaAttributes,
-    InputHTMLAttributes<HTMLInputElement> {
+export interface CheckboxProps extends AriaAttributes, InputHTMLAttributes<HTMLInputElement> {
   /** If the field should automatically focus on mount */
   autoFocus?: boolean;
   /** If the checkbox is checked */
@@ -34,9 +32,7 @@ export interface CheckboxProps
   /** Add a class to the inner input  */
   innerClass?: string;
   /** Reference to the inner input */
-  inputRef?:
-    | RefObject<HTMLInputElement>
-    | ((node: HTMLInputElement | null) => void);
+  inputRef?: RefObject<HTMLInputElement> | ((node: HTMLInputElement | null) => void);
   /** The checkbox's label */
   label?: string;
   /** Add a class to the label */
@@ -61,8 +57,8 @@ export interface CheckboxProps
   warning?: string | ReactNode;
 
   // TODO: reference react-final-form FieldRenderProps<boolean | string[]>
-  input: any;
-  meta: any;
+  input?: any;
+  meta?: any;
 }
 
 /**
