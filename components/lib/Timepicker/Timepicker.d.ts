@@ -1,11 +1,8 @@
 import Popper from 'popper.js';
 import { AriaAttributes, ComponentType, ReactNode, RefObject } from 'react';
-import { FieldRenderProps } from 'react-final-form';
 import { IntlShape } from 'react-intl';
 
-export interface TimepickerProps
-  extends AriaAttributes,
-    FieldRenderProps<string> {
+export interface TimepickerProps extends AriaAttributes {
   /** If the field should auto-focus on mount */
   autoFocus?: boolean;
   /** Disables the input field */
@@ -36,7 +33,7 @@ export interface TimepickerProps
     value: string | undefined,
     timezone: string,
     timeFormat: string,
-    intl: IntlShape
+    intl: IntlShape,
   ) => string;
   /** Where the overlay should be placed in relation to the field */
   placement?: Popper.Placement;
@@ -54,6 +51,10 @@ export interface TimepickerProps
   usePortal?: boolean;
   /** The field's value */
   value?: string;
+
+  // TODO: reference react-final-form FieldRenderProps<string>
+  input?: any;
+  meta?: any;
 }
 
 /**

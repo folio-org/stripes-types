@@ -7,9 +7,7 @@ import {
   InputHTMLAttributes,
 } from 'react';
 
-export interface RadioButtonProps
-  extends AriaAttributes,
-    InputHTMLAttributes<HTMLInputElement> {
+export interface RadioButtonProps extends AriaAttributes, InputHTMLAttributes<HTMLInputElement> {
   /** If the field should automatically focus on mount */
   autoFocus?: boolean;
   /** If the radio button is centered */
@@ -54,8 +52,8 @@ export interface RadioButtonProps
   warning?: string;
 
   // TODO: reference react-final-form FieldRenderProps<boolean | string[]>
-  input: any;
-  meta: any;
+  input?: any;
+  meta?: any;
 }
 
 /**

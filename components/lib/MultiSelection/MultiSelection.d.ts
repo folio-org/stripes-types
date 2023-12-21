@@ -13,9 +13,7 @@ export interface MultiSelectionDefaultOptionType<ValueType = never> {
  * Props each action may accept
  * @see https://github.com/folio-org/stripes-components/tree/master/lib/MultiSelection#actions
  */
-export interface MultiSelectionActionItemProps<
-  OptionType = MultiSelectionDefaultOptionType
-> {
+export interface MultiSelectionActionItemProps<OptionType = MultiSelectionDefaultOptionType> {
   /** The search term */
   filterValue: string;
   /** If this search was an exact match */
@@ -24,9 +22,7 @@ export interface MultiSelectionActionItemProps<
   renderedItems: ReadonlyArray<OptionType>;
 }
 
-export interface MultiSelectionProps<
-  OptionType = MultiSelectionDefaultOptionType
-> {
+export interface MultiSelectionProps<OptionType = MultiSelectionDefaultOptionType> {
   /**
    * Custom actions, such as a "New" row
    * @see https://github.com/folio-org/stripes-components/tree/master/lib/MultiSelection#actions
@@ -59,13 +55,10 @@ export interface MultiSelectionProps<
   /** A custom filter function, either directly gives results or does something async */
   filter?: (
     filterText: string | undefined,
-    list: OptionType[]
+    list: OptionType[],
   ) => { renderedItems: OptionType[]; exactMatch?: boolean } | Promise<void>;
   /** A custom formatter to render each option */
-  formatter?: (props: {
-    option: OptionType;
-    searchTerm: string | undefined;
-  }) => ReactNode;
+  formatter?: (props: { option: OptionType; searchTerm: string | undefined }) => ReactNode;
   /** Adds a custom ID to the control */
   id?: string;
   /** If true, adds valid styles to the field */
@@ -95,16 +88,13 @@ export interface MultiSelectionProps<
   /** The selected objects */
   value?: OptionType[];
   /** Same as {@link formatter}, `formatter` should probably be used instead. */
-  valueFormatter?: (
-    option: OptionType,
-    searchTerm: string | undefined
-  ) => ReactNode;
+  valueFormatter?: (option: OptionType, searchTerm: string | undefined) => ReactNode;
   /** Inline feedback for the user indicating a validation warning */
   warning?: ReactNode;
 
   // TODO: reference react-final-form FieldRenderProps<OptionType[]>
-  input: any;
-  meta: any;
+  input?: any;
+  meta?: any;
 }
 
 /**
@@ -127,6 +117,6 @@ export interface MultiSelectionProps<
  *     dataOptions={optionList}
  * />
  */
-export default class MultiSelection<
-  OptionType = MultiSelectionDefaultOptionType
-> extends Component<MultiSelectionProps<OptionType>> {}
+export default class MultiSelection<OptionType = MultiSelectionDefaultOptionType> extends Component<
+  MultiSelectionProps<OptionType>
+> {}

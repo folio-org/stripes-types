@@ -91,8 +91,8 @@ export interface TextFieldProps<FieldType extends string | number = string>
   warning?: ReactNode;
 
   // TODO: reference react-final-form FieldRenderProps<string|number>
-  input: any;
-  meta: any;
+  input?: any;
+  meta?: any;
 }
 
 /**
@@ -112,6 +112,6 @@ export interface TextFieldProps<FieldType extends string | number = string>
  *   onChange={this.handleChange}
  * />
  */
-export default class TextField<
-  Type extends string | number = string
-> extends Component<TextFieldProps<Type>> {}
+export default class TextField<Type extends string | number = string> extends Component<
+  TextFieldProps<Type>
+> {}
