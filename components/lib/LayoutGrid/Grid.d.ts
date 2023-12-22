@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactNode } from 'react';
 
-export interface GridProps {
+export interface GridProps extends React.HTMLProps<HTMLDivElement> {
   /** whether to apply the container-fluid CSS class */
   fluid?: boolean,
   /** Applies a custom class name */
