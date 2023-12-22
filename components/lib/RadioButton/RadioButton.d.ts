@@ -5,6 +5,7 @@ import {
   FocusEventHandler,
   FunctionComponent,
   InputHTMLAttributes,
+  ReactNode,
 } from 'react';
 
 export interface RadioButtonProps extends AriaAttributes, InputHTMLAttributes<HTMLInputElement> {
@@ -27,7 +28,7 @@ export interface RadioButtonProps extends AriaAttributes, InputHTMLAttributes<HT
   /** If the radio button should be rendered inline */
   inline?: boolean;
   /** The radio button's label */
-  label?: string;
+  label?: ReactNode;
   /** Add a class to the label */
   labelClass?: string;
   /** Add style to the label */
