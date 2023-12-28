@@ -1,7 +1,7 @@
 import { FunctionComponent, ReactNode } from 'react';
 import { ViewportSize } from './ViewportSize';
 
-export interface RowProps {
+export interface RowProps extends Omit<React.HTMLProps<HTMLDivElement>, 'start'> {
   reverse?: boolean,
   start?: ViewportSize,
   center?: ViewportSize,

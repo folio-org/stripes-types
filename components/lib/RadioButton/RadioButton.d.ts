@@ -5,11 +5,10 @@ import {
   FocusEventHandler,
   FunctionComponent,
   InputHTMLAttributes,
+  ReactNode,
 } from 'react';
 
-export interface RadioButtonProps
-  extends AriaAttributes,
-    InputHTMLAttributes<HTMLInputElement> {
+export interface RadioButtonProps extends AriaAttributes, InputHTMLAttributes<HTMLInputElement> {
   /** If the field should automatically focus on mount */
   autoFocus?: boolean;
   /** If the radio button is centered */
@@ -29,7 +28,7 @@ export interface RadioButtonProps
   /** If the radio button should be rendered inline */
   inline?: boolean;
   /** The radio button's label */
-  label?: string;
+  label?: ReactNode;
   /** Add a class to the label */
   labelClass?: string;
   /** Add style to the label */
@@ -54,8 +53,8 @@ export interface RadioButtonProps
   warning?: string;
 
   // TODO: reference react-final-form FieldRenderProps<boolean | string[]>
-  input: any;
-  meta: any;
+  input?: any;
+  meta?: any;
 }
 
 /**
