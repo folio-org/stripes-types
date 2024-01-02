@@ -3,7 +3,7 @@ import { FunctionComponent, ReactNode } from 'react';
 import { ColumnSize } from './ColumnSize';
 import { ViewportSize } from './ViewportSize';
 
-export interface ColProps {
+export interface ColProps extends React.HTMLProps<HTMLDivElement> {
   xs?: ColumnSize,
   sm?: ColumnSize,
   md?: ColumnSize,
