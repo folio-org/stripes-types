@@ -4,8 +4,14 @@
     "jest": true
   },
   "rules": {
+    // projects represented here misuse these, and so we inherit this problem
+    "import/prefer-default-export": "off",
     "import/no-named-as-default": "off",
     // eslint does not like .d.ts files without a corresponding .js file
-    "import/no-unresolved": "off"
+    "import/no-unresolved": "off",
+    // we want to use any while we're developing these types
+    "@typescript-eslint/no-explicit-any": "off",
+    // allow defined but unused types (caused issues in namespaces)
+    "@typescript-eslint/no-unused-vars": "off"
   }
 }
