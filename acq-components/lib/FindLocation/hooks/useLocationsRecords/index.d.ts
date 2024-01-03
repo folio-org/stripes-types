@@ -1,0 +1,1 @@
+export { useLocationsRecords } from './useLocationsRecords';

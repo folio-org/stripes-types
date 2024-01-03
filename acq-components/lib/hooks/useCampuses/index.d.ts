@@ -1,0 +1,1 @@
+export { useCampuses } from './useCampuses';

@@ -1,0 +1,1 @@
+export const generateQueryTemplate: any;
