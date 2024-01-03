@@ -22,24 +22,19 @@ export interface StripesType {
    * @returns 0, if the interface is available but the requested version is not
    * @see https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#testing-for-interfaces
    */
-  hasInterface(
-    interface: string,
-    version?: string,
-  ): boolean | string | 0 | undefined;
+  hasInterface(interface: string, version?: string): boolean | string | 0 | undefined;
 
   // TODO: fill this in with additional properties from Stripes object
   // https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md#the-stripes-object
   [key: string]: unknown;
 }
 
+// for use in prop-types
 export const stripesShape: Requireable<StripesType>;
 
 export class Stripes implements StripesType {
   hasPerm(perm: string): boolean | undefined;
-  hasInterface(
-    interface: string,
-    version?: string,
-  ): boolean | string | 0 | undefined;
+  hasInterface(interface: string, version?: string): boolean | string | 0 | undefined;
 
   [key: string]: unknown;
 }
