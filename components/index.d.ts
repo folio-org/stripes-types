@@ -1,7 +1,7 @@
 /* form elements */
 export { default as AutoSuggest } from './lib/AutoSuggest';
 export { default as Badge, BadgeProps } from './lib/Badge';
-export { default as Button, ButtonProps } from './lib/Button';
+export { default as Button, ButtonProps, ButtonStyle } from './lib/Button';
 export { default as ButtonGroup } from './lib/ButtonGroup';
 export { default as Checkbox, CheckboxProps } from './lib/Checkbox';
 export { default as CurrencySelect } from './lib/CurrencySelect';
@@ -109,7 +109,7 @@ export { default as DropdownMenu, DropdownMenuProps } from './lib/DropdownMenu';
 export { default as DropdownButton } from './lib/DropdownButton';
 export { default as MenuSection } from './lib/MenuSection';
 export { default as FocusLink } from './lib/FocusLink';
-export { default as Headline } from './lib/Headline';
+export { default as Headline, HeadlineProps, HeadlineSize, HeadlineWeight } from './lib/Headline';
 export { HotKeys, FocusTrap } from './lib/HotKeys';
 export { default as Highlighter } from './lib/Highlighter';
 export { default as MenuItem } from './lib/MenuItem';
