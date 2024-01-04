@@ -1,6 +1,6 @@
 import { Moment } from 'moment';
 import Popper from 'popper.js';
-import { AriaAttributes, Component, FocusEventHandler, ReactNode, RefObject } from 'react';
+import { AriaAttributes, Component, FocusEventHandler, ReactNode, Ref } from 'react';
 import { Merge } from 'type-fest';
 import { TextFieldProps } from '../TextField';
 
@@ -20,7 +20,7 @@ export interface DatepickerProps extends AriaAttributes {
   /** Adds a custom ID to the control */
   id?: string;
   /** Ref to the internal text field */
-  inputRef?: RefObject<HTMLInputElement> | ((el: HTMLInputElement) => void);
+  inputRef?: Ref<HTMLInputElement>;
   /** Label the datepicker */
   label?: ReactNode;
   /** Set the locale for use */

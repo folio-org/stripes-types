@@ -1,5 +1,5 @@
 import Popper from 'popper.js';
-import { AriaAttributes, ComponentType, ReactNode, RefObject } from 'react';
+import { AriaAttributes, ComponentType, ReactNode, Ref } from 'react';
 import { IntlShape } from 'react-intl';
 
 export interface TimepickerProps extends AriaAttributes {
@@ -10,7 +10,7 @@ export interface TimepickerProps extends AriaAttributes {
   /** Adds a custom ID to the control */
   id?: string;
   /** Ref to the internal text field */
-  inputRef?: RefObject<HTMLInputElement> | ((el: HTMLInputElement) => void);
+  inputRef?: Ref<HTMLInputElement>;
   /** Label the Timepicker */
   label?: ReactNode;
   /** Set the locale for use */
