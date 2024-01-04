@@ -1,2 +1,1 @@
-declare const LegacyPopover: any;
-export default LegacyPopover;
+export { default } from './LegacyPopover';
