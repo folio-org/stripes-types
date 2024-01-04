@@ -1,2 +1,1 @@
-declare const MessageBanner: any;
-export default MessageBanner;
+export { default, MessageBannerProps } from './MessageBanner';

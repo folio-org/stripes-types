@@ -1,4 +1,4 @@
-import { Component, FunctionComponent, ReactNode } from 'react';
+import { Component, ReactNode } from 'react';
 
 // these are the only parts of the record that are used by the component
 // additionally, it safely checks for undefined values, so we assume
