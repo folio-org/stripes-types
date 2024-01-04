@@ -1,4 +1,5 @@
 import { FunctionComponent, MouseEventHandler, ReactNode } from 'react';
+import { ButtonProps } from '../Button';
 
 export interface ConfirmationModalProps {
   /** The modal's H1 tag and ARIA-label */
@@ -20,6 +21,11 @@ export interface ConfirmationModalProps {
   cancelLabel?: ReactNode;
   /** Custom text for the Submit action */
   submitLabel?: ReactNode;
+
+  /** Style of the Submit action button */
+  buttonStyle?: ButtonProps['buttonStyle'];
+  /** Style of the Cancel action button */
+  cancelButtonStyle?: ButtonProps['buttonStyle'];
 
   /** The tag to render the modal's body as */
   bodyTag?: string;
