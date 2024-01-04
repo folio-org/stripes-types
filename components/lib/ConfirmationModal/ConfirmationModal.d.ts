@@ -20,7 +20,7 @@ export interface ConfirmationModalProps {
   /** Custom text for the Cancel action */
   cancelLabel?: ReactNode;
   /** Custom text for the Submit action */
-  submitLabel?: ReactNode;
+  confirmLabel?: ReactNode;
 
   /** Style of the Submit action button */
   buttonStyle?: ButtonProps['buttonStyle'];

@@ -1,2 +1,1 @@
-declare const FilterControlGroup: any;
-export default FilterControlGroup;
+export { default, FilterControlGroupProps } from './FilterControlGroup';

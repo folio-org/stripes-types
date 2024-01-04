@@ -150,6 +150,7 @@ export {
 /* specific use */
 export {
   default as FilterGroups,
+  FilterGroupsProps,
   filterState,
   filters2cql,
   handleClearAllFilters,
@@ -159,8 +160,13 @@ export {
   onChangeFilter,
   FILTER_SEPARATOR,
   FILTER_GROUP_SEPARATOR,
+  TransitionToParamsFunc,
+  QueryParamFunc,
+  FilterGroupsConfigValue,
+  FilterGroupsConfigGroup,
+  FilterGroupsState,
 } from './lib/FilterGroups';
-export { default as FilterControlGroup } from './lib/FilterControlGroup';
+export { default as FilterControlGroup, FilterControlGroupProps } from './lib/FilterControlGroup';
 export { default as FilterPaneSearch } from './lib/FilterPaneSearch';
 export { default as ExportCsv } from './lib/ExportCsv';
 export { default as exportToCsv } from './lib/ExportCsv/exportToCsv';
