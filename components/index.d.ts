@@ -82,7 +82,7 @@ export {
   ColumnSize,
   ViewportSize,
 } from './lib/LayoutGrid';
-export { default as Layout } from './lib/Layout';
+export { default as Layout, LayoutProps } from './lib/Layout';
 export { default as LayoutBox } from './lib/LayoutBox';
 export { default as LayoutHeader } from './lib/LayoutHeader';
 export {
