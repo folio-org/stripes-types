@@ -1,2 +1,1 @@
-declare const Layer: any;
-export default Layer;
+export { default, LayerProps } from './Layer';

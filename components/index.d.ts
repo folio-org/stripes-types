@@ -71,7 +71,7 @@ export {
 export { default as PaneMenu, PaneMenuProps } from './lib/PaneMenu';
 export { default as PaneSubheader, PaneSubheaderProps } from './lib/PaneSubheader';
 export { default as Paneset, PanesetProps } from './lib/Paneset';
-export { default as Layer } from './lib/Layer';
+export { default as Layer, LayerProps } from './lib/Layer';
 export {
   Grid,
   Row,
