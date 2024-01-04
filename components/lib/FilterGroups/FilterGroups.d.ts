@@ -14,8 +14,10 @@ export function initialFilterState(
   filters?: string,
 ): FilterGroupsState;
 
+/** Convert stringified filters to a state object */
 export function filterState(filters?: string): FilterGroupsState;
 
+/** Convert filters to CQL */
 export function filters2cql(config: FilterGroupsConfigGroup[], filters: string): string | undefined;
 
 /** @deprecated use {@link handleFilterChange} */
@@ -58,5 +60,12 @@ export interface FilterGroupsProps {
   disableNames?: Record<string, boolean | undefined>;
 }
 
+/**
+ * This component renders a set of filter-groups, each of which pertains to a
+ * searchable field and contains a set of filters that indicate values required
+ * for that field.
+ *
+ * @see https://github.com/folio-org/stripes-components/tree/master/lib/FilterGroups
+ */
 declare const FilterGroups: FunctionComponent<FilterGroupsProps>;
 export default FilterGroups;

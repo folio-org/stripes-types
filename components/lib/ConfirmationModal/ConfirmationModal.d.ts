@@ -32,9 +32,26 @@ export interface ConfirmationModalProps {
 }
 
 /**
- * Renders a given button
+ * Renders a basic confirmation modal with customizable cancel and submit buttons
  * @example
- * <Button>Sample</Button>
+ * const [open, setOpen] = useState(false);
+ *
+ * const handleConfirm = useCallback(() => {
+ *   setOpen(false);
+ *   // do something
+ * });
+ *
+ * const handleCancel = useCallback(() => {
+ *   setOpen(false);
+ * });
+ *
+ * <ConfirmationModal
+ *   open={open}
+ *   heading="Please confirm!"
+ *   message="Description of the thing that needs confirming"
+ *   onConfirm={handleConfirm}
+ *   onCancel={handleCancel}
+ * />
  */
 export const ConfirmationModal: FunctionComponent<ConfirmationModalProps>;
 export default ConfirmationModal;
