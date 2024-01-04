@@ -34,7 +34,7 @@ export interface CheckboxProps extends AriaAttributes, InputHTMLAttributes<HTMLI
   /** Reference to the inner input */
   inputRef?: RefObject<HTMLInputElement> | ((node: HTMLInputElement | null) => void);
   /** The checkbox's label */
-  label?: string;
+  label?: ReactNode;
   /** Add a class to the label */
   labelClass?: string;
   /** Set a name for the input */
