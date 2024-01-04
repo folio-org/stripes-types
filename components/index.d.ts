@@ -21,7 +21,14 @@ export { default as EmptyMessage } from './lib/EmptyMessage';
 export { default as FormattedUTCDate } from './lib/FormattedUTCDate';
 export { default as Label, LabelProps } from './lib/Label';
 export { default as TextLink } from './lib/TextLink';
-export { Loading, LoadingPane, LoadingView } from './lib/Loading';
+export {
+  Loading,
+  LoadingProps,
+  LoadingPane,
+  LoadingPaneProps,
+  LoadingView,
+  LoadingViewProps,
+} from './lib/Loading';
 export { default as RadioButton, RadioButtonProps } from './lib/RadioButton';
 export { default as RadioButtonGroup } from './lib/RadioButtonGroup';
 export { default as Select, SelectProps, SelectOptionType } from './lib/Select';

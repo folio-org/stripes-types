@@ -1,2 +1,1 @@
-declare const Spinner: any;
-export default Spinner;
+export { default } from './Spinner';
