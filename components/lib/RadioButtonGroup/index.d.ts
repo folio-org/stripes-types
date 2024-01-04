@@ -1,2 +1,1 @@
-declare const RadioButtonGroup: any;
-export default RadioButtonGroup;
+export { default, RadioButtonGroupProps } from './RadioButtonGroup';

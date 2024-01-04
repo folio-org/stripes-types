@@ -30,7 +30,7 @@ export {
   LoadingViewProps,
 } from './lib/Loading';
 export { default as RadioButton, RadioButtonProps } from './lib/RadioButton';
-export { default as RadioButtonGroup } from './lib/RadioButtonGroup';
+export { default as RadioButtonGroup, RadioButtonGroupProps } from './lib/RadioButtonGroup';
 export { default as Select, SelectProps, SelectOptionType } from './lib/Select';
 export { default as Spinner } from './lib/Spinner';
 export { default as TextArea } from './lib/TextArea';
