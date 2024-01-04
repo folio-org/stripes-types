@@ -1,4 +1,3 @@
-import Popper from 'popper.js';
 import {
   AriaAttributes,
   Component,
@@ -10,6 +9,7 @@ import {
 } from 'react';
 import { RequireAllOrNone } from 'type-fest';
 import { ButtonProps } from '../Button/Button';
+import { PopperModifiers, PopperPlacement } from '../Popper';
 
 export interface DropdownBaseProps extends AriaAttributes {
   /** Adds additional classes to the wrapping element */
@@ -21,21 +21,18 @@ export interface DropdownBaseProps extends AriaAttributes {
     open?: (
       trigger?: React.RefObject<HTMLElement>,
       menu?: HTMLElement,
-      firstItem?: HTMLElement
+      firstItem?: HTMLElement,
     ) => void;
-    close?: (
-      trigger?: React.RefObject<HTMLElement>,
-      menu?: HTMLElement
-    ) => void;
+    close?: (trigger?: React.RefObject<HTMLElement>, menu?: HTMLElement) => void;
   };
   /** Overrides the ID for the dropdown */
   id?: string;
   /** Controls the addition of padding within the dropdown */
   hasPadding?: boolean;
   /** Custom modifiers for how the popper should render */
-  modifiers?: Popper.Modifiers;
+  modifiers?: PopperModifiers;
   /** Custom placement for the popper */
-  placement?: Popper.Placement;
+  placement?: PopperPlacement;
   /** If `position: relative` should be applied */
   relativePosition?: boolean;
   /** A custom tag for the main wrapping element */
@@ -69,11 +66,7 @@ export interface DropdownTriggerCustomProps {
 }
 
 export interface DropdownMenuFunction {
-  (props: {
-    open: boolean;
-    onToggle: () => void;
-    keyHandler?: KeyboardEventHandler;
-  }): ReactNode;
+  (props: { open: boolean; onToggle: () => void; keyHandler?: KeyboardEventHandler }): ReactNode;
 }
 
 export interface DropdownMenuChildrenProps {

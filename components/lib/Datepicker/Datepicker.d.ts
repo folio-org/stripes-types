@@ -1,7 +1,7 @@
 import { Moment } from 'moment';
-import Popper from 'popper.js';
 import { AriaAttributes, Component, FocusEventHandler, ReactNode, Ref } from 'react';
 import { Merge } from 'type-fest';
+import { PopperModifiers, PopperPlacement } from '../Popper';
 import { TextFieldProps } from '../TextField';
 
 export interface DatepickerProps extends AriaAttributes {
@@ -28,7 +28,7 @@ export interface DatepickerProps extends AriaAttributes {
   /** Remove bottom margin */
   marginBottom0?: boolean;
   /** Popper modifiers */
-  modifiers?: Popper.Modifiers;
+  modifiers?: PopperModifiers;
   /** Fired when the user clicks out of/deselects the control */
   onBlur?: FocusEventHandler<HTMLInputElement>;
   /** Fired anytime internal state changes */
@@ -40,7 +40,7 @@ export interface DatepickerProps extends AriaAttributes {
   /** Parses a date for local display in the text field */
   parser?: (value: string) => string;
   /** Where the overlay should be placed in relation to the field */
-  placement?: Popper.Placement;
+  placement?: PopperPlacement;
   /** If the control is readonly */
   readOnly?: boolean;
   /** If the field is required */

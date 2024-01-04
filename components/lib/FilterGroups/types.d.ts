@@ -48,6 +48,8 @@ export type FilterGroupsConfigGroup = {
   operator?: string;
 } & (
   | {
+      // these are only available if isRange=true
+
       /** The flag that is used to build range cql query. */
       isRange: true;
       /** The flag to include boundary value from the start. Requires `isRange: true` */

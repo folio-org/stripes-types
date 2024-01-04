@@ -1,5 +1,5 @@
-import Popper from 'popper.js';
 import { Component, FocusEventHandler, ReactNode } from 'react';
+import { PopperModifiers } from '../Popper';
 
 /**
  * The default option type to be used, contains a label and potentially a value
@@ -70,7 +70,7 @@ export interface MultiSelectionProps<OptionType = MultiSelectionDefaultOptionTyp
   /** The maximum height for the options menu, in pixels */
   maxHeight?: number;
   /** Modifiers for how the overlay should render */
-  modifiers?: Popper.Modifiers;
+  modifiers?: PopperModifiers;
   /** Fired when the user clicks out of/deselects the control */
   onBlur?: FocusEventHandler<HTMLInputElement>;
   /** Fired anytime internal state changes */

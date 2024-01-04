@@ -1,6 +1,6 @@
-import Popper from 'popper.js';
 import { AriaAttributes, ComponentType, ReactNode, Ref } from 'react';
 import { IntlShape } from 'react-intl';
+import { PopperModifiers, PopperPlacement } from '../Popper';
 
 export interface TimepickerProps extends AriaAttributes {
   /** If the field should auto-focus on mount */
@@ -18,7 +18,7 @@ export interface TimepickerProps extends AriaAttributes {
   /** Remove bottom margin */
   marginBottom0?: boolean;
   /** Popper modifiers */
-  modifiers?: Popper.Modifiers;
+  modifiers?: PopperModifiers;
   /** Fired anytime internal state changes */
   onChange?: (e: Event, standardizedTime?: string) => void;
   /** Format a UTC value into the specified timezone */
@@ -36,7 +36,7 @@ export interface TimepickerProps extends AriaAttributes {
     intl: IntlShape,
   ) => string;
   /** Where the overlay should be placed in relation to the field */
-  placement?: Popper.Placement;
+  placement?: PopperPlacement;
   /** If the control is readonly */
   readOnly?: boolean;
   /** If the field is required */

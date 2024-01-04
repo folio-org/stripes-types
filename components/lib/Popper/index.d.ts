@@ -1,4 +1,2 @@
-export const AVAILABLE_PLACEMENTS: any;
-
-declare const Popper: any;
-export default Popper;
+export { default, AVAILABLE_PLACEMENTS } from './Popper';
+export type { PopperProps, PopperPlacement, PopperModifiers } from './Popper';

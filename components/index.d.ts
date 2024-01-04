@@ -37,7 +37,13 @@ export {
   MultiSelectionDefaultOptionType,
 } from './lib/MultiSelection';
 export { default as RepeatableField } from './lib/RepeatableField';
-export { default as Popper, AVAILABLE_PLACEMENTS } from './lib/Popper';
+export {
+  default as Popper,
+  AVAILABLE_PLACEMENTS,
+  PopperProps,
+  PopperPlacement,
+  PopperModifiers,
+} from './lib/Popper';
 
 /* data containers */
 export { default as Card, CardProps } from './lib/Card';
@@ -118,7 +124,7 @@ export { default as NavList } from './lib/NavList';
 export { default as NavListItem } from './lib/NavListItem';
 export { default as NavListSection } from './lib/NavListSection';
 export { default as NoValue } from './lib/NoValue';
-export { default as Popover } from './lib/Popover';
+export { default as Popover, PopoverProps } from './lib/Popover';
 export { default as Selection, OptionSegment } from './lib/Selection';
 export { default as SRStatus } from './lib/SRStatus';
 export { default as PasswordStrength } from './lib/PasswordStrength';
@@ -138,7 +144,7 @@ export { default as ErrorBoundary } from './lib/ErrorBoundary';
 /* structures */
 export { default as ConfirmationModal, ConfirmationModalProps } from './lib/ConfirmationModal';
 export { default as ErrorModal } from './lib/ErrorModal';
-export { default as InfoPopover } from './lib/InfoPopover';
+export { default as InfoPopover, InfoPopoverProps } from './lib/InfoPopover';
 export { default as SearchField } from './lib/SearchField';
 export { default as ConflictDetectionBanner } from './lib/ConflictDetectionBanner';
 export {
