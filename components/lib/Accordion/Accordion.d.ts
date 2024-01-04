@@ -2,7 +2,7 @@ import { Component, CSSProperties, ReactNode, RefObject } from 'react';
 import { HotKeysProps } from '../HotKeys';
 import { DefaultAccordionHeaderProps } from './headers/DefaultAccordionHeader';
 
-export interface AccordionProps extends Partial<DefaultAccordionHeaderProps> {
+export type AccordionProps<HeaderProps = DefaultAccordionHeaderProps> = Partial<HeaderProps> & {
   /** The containing accordionSet */
   accordionSet?: ReactNode;
   /** The accordion's contents */
@@ -21,8 +21,8 @@ export interface AccordionProps extends Partial<DefaultAccordionHeaderProps> {
   disabled?: boolean;
   /** Supplies a custom header */
   header?: ReactNode;
-  /** Adds props to the default header */
-  headerProps?: Partial<DefaultAccordionHeaderProps>;
+  /** Adds props to the header (additional props on the root `<Accordion>` will also be passed) */
+  headerProps?: Partial<HeaderProps>;
   /** The id of the accordion */
   id?: string;
   /** A label for the accordion */
@@ -37,7 +37,7 @@ export interface AccordionProps extends Partial<DefaultAccordionHeaderProps> {
   separator?: boolean;
   toggleKeyHandlers?: HotKeysProps['handlers'];
   toggleKeyMap?: HotKeysProps['keyMap'];
-}
+};
 
 /**
  * Displays information in an accordion
@@ -51,4 +51,6 @@ export interface AccordionProps extends Partial<DefaultAccordionHeaderProps> {
  *   </Accordion>
  * </AccordionSet>
  */
-export default class Accordion extends Component<AccordionProps> {}
+export default class Accordion<HeaderProps = DefaultAccordionHeaderProps> extends Component<
+  AccordionProps<HeaderProps>
+> {}
