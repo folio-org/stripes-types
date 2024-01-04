@@ -126,7 +126,7 @@ export { default as Headline, HeadlineProps, HeadlineSize, HeadlineWeight } from
 export { HotKeys, FocusTrap } from './lib/HotKeys';
 export { default as Highlighter } from './lib/Highlighter';
 export { default as MenuItem } from './lib/MenuItem';
-export { default as MetaSection } from './lib/MetaSection';
+export { default as MetaSection, MetaSectionProps } from './lib/MetaSection';
 export { default as NavList } from './lib/NavList';
 export { default as NavListItem } from './lib/NavListItem';
 export { default as NavListSection } from './lib/NavListSection';
