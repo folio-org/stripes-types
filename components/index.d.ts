@@ -20,7 +20,7 @@ export { default as FormattedTime } from './lib/FormattedTime';
 export { default as EmptyMessage } from './lib/EmptyMessage';
 export { default as FormattedUTCDate } from './lib/FormattedUTCDate';
 export { default as Label, LabelProps } from './lib/Label';
-export { default as TextLink } from './lib/TextLink';
+export { default as TextLink, TextLinkProps } from './lib/TextLink';
 export {
   Loading,
   LoadingProps,
