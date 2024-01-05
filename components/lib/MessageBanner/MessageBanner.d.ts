@@ -1,4 +1,4 @@
-import { AriaAttributes, ComponentProps, ElementType, ReactNode, Ref } from 'react';
+import { AriaAttributes, ComponentPropsWithRef, ElementType, ReactNode, Ref } from 'react';
 import { IconName } from '../Icon/Icon';
 import { IconButtonProps } from '../IconButton';
 
@@ -6,9 +6,7 @@ import { IconButtonProps } from '../IconButton';
 
 export type MessageBannerProps<Element extends ElementType = 'div'> =
   // extends props of whatever Element is provided
-  (Element extends keyof JSX.IntrinsicElements
-    ? JSX.IntrinsicElements[Element]
-    : ComponentProps<Element>) & {
+  ComponentPropsWithRef<Element> & {
     /** Sets the aria-live of the root element */
     'aria-live'?: AriaAttributes['aria-live'];
     /** Sets the style of the banner */
@@ -43,14 +41,11 @@ export type MessageBannerProps<Element extends ElementType = 'div'> =
     /** Adds a custom class name for the content element inside the banner */
     contentClassName?: string;
 
-    /** Change the root element of the banner */
-    element: Element;
-
     /** Control the visibility externally; using this will enable transitioning */
     show?: boolean;
 
     ref?: Ref<Element>;
-  };
+  } & (Element extends 'div' ? { element?: 'div' } : { element: Element }); // element is optional only if using default div
 
 /**
  * Display a message to the user. The message banner has short and clear content with key information in bold.
@@ -96,4 +91,4 @@ export type MessageBannerProps<Element extends ElementType = 'div'> =
  */
 export default function MessageBanner<Element extends ElementType = 'div'>(
   props: MessageBannerProps<Element>,
-): ReactNode;
+): JSX.Element;
