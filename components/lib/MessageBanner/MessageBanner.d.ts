@@ -1,4 +1,5 @@
 import { AriaAttributes, ComponentPropsWithRef, ElementType, ReactNode, Ref } from 'react';
+import { IsEqual } from 'type-fest';
 import { IconName } from '../Icon/Icon';
 import { IconButtonProps } from '../IconButton';
 
@@ -45,7 +46,7 @@ export type MessageBannerProps<Element extends ElementType = 'div'> =
     show?: boolean;
 
     ref?: Ref<Element>;
-  } & (Element extends 'div' ? { element?: 'div' } : { element: Element }); // element is optional only if using default div
+  } & (IsEqual<Element, 'div'> extends true ? { element?: 'div' } : { element: Element }); // element is optional only if using default div
 
 /**
  * Display a message to the user. The message banner has short and clear content with key information in bold.
