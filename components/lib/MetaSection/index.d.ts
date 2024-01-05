@@ -1,2 +1,1 @@
-declare const MetaSection: any;
-export default MetaSection;
+export { default, MetaSectionProps } from './MetaSection';

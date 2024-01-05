@@ -1,2 +1,1 @@
-declare const ConfirmationModal: any;
-export default ConfirmationModal;
+export { default, ConfirmationModalProps } from './ConfirmationModal';

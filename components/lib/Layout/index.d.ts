@@ -1,2 +1,1 @@
-declare const Layout: any;
-export default Layout;
+export { default, LayoutProps } from './Layout';

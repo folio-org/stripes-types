@@ -8,6 +8,8 @@ import {
 } from 'react';
 import { LinkProps } from 'react-router-dom';
 
+export type ButtonStyle = 'default' | 'primary' | 'success' | 'warning' | 'danger' | 'dropdownItem';
+
 export interface ButtonBaseProps extends AriaAttributes {
   /** Changes the (flex box) alignment of the button */
   align?: 'start' | 'center' | 'end';
@@ -20,13 +22,7 @@ export interface ButtonBaseProps extends AriaAttributes {
   /** Add a custom CSS class to the button */
   buttonClass?: string;
   /** Sets the style of the button */
-  buttonStyle?:
-    | 'default'
-    | 'primary'
-    | 'success'
-    | 'warning'
-    | 'danger'
-    | 'dropdownItem';
+  buttonStyle?: ButtonStyle;
   /** The button for the label */
   children: ReactNode;
   /** Forces the button to 100% width */
@@ -61,7 +57,6 @@ export type ButtonProps = ButtonBaseProps &
  * <Button>Sample</Button>
  */
 export const Button: ForwardRefExoticComponent<
-  PropsWithoutRef<ButtonProps> &
-    RefAttributes<HTMLAnchorElement | HTMLButtonElement>
+  PropsWithoutRef<ButtonProps> & RefAttributes<HTMLAnchorElement | HTMLButtonElement>
 >;
 export default Button;

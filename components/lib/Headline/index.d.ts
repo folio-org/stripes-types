@@ -1,2 +1,1 @@
-declare const Headline: any;
-export default Headline;
+export { default, HeadlineProps, HeadlineSize, HeadlineWeight } from './Headline';

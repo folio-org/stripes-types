@@ -1,3 +1,3 @@
-export const LoadingView: any;
-export const LoadingPane: any;
-export const Loading: any;
+export { default as Loading, LoadingProps } from './Loading';
+export { default as LoadingPane, LoadingPaneProps } from './LoadingPane';
+export { default as LoadingView, LoadingViewProps } from './LoadingView';

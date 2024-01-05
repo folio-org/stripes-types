@@ -1,2 +1,1 @@
-declare const TextArea: any;
-export default TextArea;
+export { default, TextAreaProps } from './TextArea';

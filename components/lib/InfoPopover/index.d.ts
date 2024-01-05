@@ -1,2 +1,1 @@
-declare const InfoPopover: any;
-export default InfoPopover;
+export { default, InfoPopoverProps } from './InfoPopover';

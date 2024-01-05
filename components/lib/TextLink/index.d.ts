@@ -1,2 +1,1 @@
-declare const TextLink: any;
-export default TextLink;
+export { default, TextLinkProps } from './TextLink';

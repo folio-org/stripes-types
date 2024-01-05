@@ -5,7 +5,7 @@ import {
   FunctionComponent,
   InputHTMLAttributes,
   ReactNode,
-  RefObject,
+  Ref,
 } from 'react';
 
 export interface CheckboxProps extends AriaAttributes, InputHTMLAttributes<HTMLInputElement> {
@@ -32,9 +32,9 @@ export interface CheckboxProps extends AriaAttributes, InputHTMLAttributes<HTMLI
   /** Add a class to the inner input  */
   innerClass?: string;
   /** Reference to the inner input */
-  inputRef?: RefObject<HTMLInputElement> | ((node: HTMLInputElement | null) => void);
+  inputRef?: Ref<HTMLInputElement>;
   /** The checkbox's label */
-  label?: string;
+  label?: ReactNode;
   /** Add a class to the label */
   labelClass?: string;
   /** Set a name for the input */
