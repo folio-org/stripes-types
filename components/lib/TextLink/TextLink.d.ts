@@ -4,7 +4,7 @@ import { LinkProps } from 'react-router-dom';
 // <Link> has a <a> inside, so we can default safely to that
 export type TextLinkProps<Element extends ElementType<{ className: string }> = 'a'> =
   ComponentPropsWithRef<Element> & {
-    /** The content to display. Function form passes the root classname in */
+    /** The content to display. Function form passes the root className in */
     children: ReactNode | ((props: { className: string }) => ReactNode);
     /** The root element we're using */
     element?: Element;
@@ -25,19 +25,19 @@ export type TextLinkProps<Element extends ElementType<{ className: string }> = '
  * @example
  * ```js
  * <TextLink to="/users">
- *   I'm an internal link
+ *   I am an internal link
  * </TextLink>
  * ```
  * @example
  * ```js
  * <TextLink target="_blank" rel="noopener noreferrer" href="https://folio.org">
- *   I'm an external link
+ *   I am an external link
  * </TextLink>
  * ```
  * @example
  * ```js
  * <TextLink element="button" onClick={() => doSomething()}>
- *   I'm a button element!
+ *   I am a button element!
  * </TextLink>
  * ```
  */
