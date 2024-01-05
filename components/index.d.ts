@@ -33,7 +33,7 @@ export { default as RadioButton, RadioButtonProps } from './lib/RadioButton';
 export { default as RadioButtonGroup, RadioButtonGroupProps } from './lib/RadioButtonGroup';
 export { default as Select, SelectProps, SelectOptionType } from './lib/Select';
 export { default as Spinner } from './lib/Spinner';
-export { default as TextArea } from './lib/TextArea';
+export { default as TextArea, TextAreaProps } from './lib/TextArea';
 export { default as TextField, TextFieldProps } from './lib/TextField';
 export { default as Timepicker, TimepickerProps } from './lib/Timepicker';
 export { default as Tooltip } from './lib/Tooltip';
