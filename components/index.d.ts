@@ -177,6 +177,7 @@ export {
   QueryParamFunc,
   FilterGroupsConfigValue,
   FilterGroupsConfigGroup,
+  FilterGroupsConfig,
   FilterGroupsState,
 } from './lib/FilterGroups';
 export { default as FilterControlGroup, FilterControlGroupProps } from './lib/FilterControlGroup';

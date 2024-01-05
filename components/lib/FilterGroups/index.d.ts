@@ -14,4 +14,9 @@ export {
   QueryParamFunc,
 } from './FilterGroups';
 
-export type { FilterGroupsConfigValue, FilterGroupsConfigGroup, FilterGroupsState } from './types';
+export type {
+  FilterGroupsConfigValue,
+  FilterGroupsConfigGroup,
+  FilterGroupsConfig,
+  FilterGroupsState,
+} from './types';

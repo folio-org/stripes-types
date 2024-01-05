@@ -73,3 +73,4 @@ export type FilterGroupsConfigGroup = {
 );
 
 export type FilterGroupsState = Record<string, boolean>;
+export type FilterGroupsConfig = FilterGroupsConfigGroup[];
