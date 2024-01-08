@@ -1,2 +1,1 @@
-declare const useAdvancedSearch: any;
-export default useAdvancedSearch;
+export { default } from './useAdvancedSearch';
