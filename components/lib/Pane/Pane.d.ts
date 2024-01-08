@@ -1,11 +1,4 @@
-import {
-  AriaAttributes,
-  Component,
-  CSSProperties,
-  ElementType,
-  ReactNode,
-  RefObject,
-} from 'react';
+import { AriaAttributes, Component, CSSProperties, ElementType, ReactNode, Ref } from 'react';
 import { SetOptional } from 'type-fest';
 import { PaneHeaderDefaultProps } from '../PaneHeader/PaneHeader';
 
@@ -72,10 +65,7 @@ export interface PaneProps extends AriaAttributes {
    */
   onClose?: () => void;
   /** Callback for when the pane is mounted */
-  onMount?: (args: {
-    paneRef: RefObject<HTMLElement>;
-    paneTitleRef: RefObject<HTMLDivElement>;
-  }) => void;
+  onMount?: (args: { paneRef: Ref<HTMLElement>; paneTitleRef: Ref<HTMLDivElement> }) => void;
   /** If the pane's contents should be padded */
   padContent?: boolean;
   /**
@@ -114,7 +104,7 @@ export interface PaneProps extends AriaAttributes {
       | 'dismissible'
       | 'onClose'
       | 'id'
-    >
+    >,
   ) => ReactNode;
   /** Render something immediately beneath the main pane header (likely a <PaneSubheader>) */
   subheader?: ReactNode;

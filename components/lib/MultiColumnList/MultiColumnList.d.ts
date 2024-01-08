@@ -25,10 +25,7 @@ export interface PositionObject {
 
 export type PagingType = 'click' | 'none' | 'prev-next' | 'scroll';
 
-export interface MultiColumnListBaseProps<
-  DataShape,
-  OmittedColumns extends string
-> {
+export interface MultiColumnListBaseProps<DataShape, OmittedColumns extends string> {
   /** If the list should fill the containing element (e.g. filling the full width/height of a pane) */
   autosize?: boolean;
   /**
@@ -47,20 +44,15 @@ export interface MultiColumnListBaseProps<
   /** The list's data */
   contentData: DataShape[];
   /** Custom functions that render the nodes for each column */
-  formatter?: Record<
-    keyof Omit<DataShape, OmittedColumns>,
-    (item: DataShape) => ReactNode
-  >;
+  formatter?: Record<keyof Omit<DataShape, OmittedColumns>, (item: DataShape) => ReactNode>;
   /** Replaces the default classes with the result of this function */
   getCellClass?: (
     defaultClasses: string,
     rowData: DataShape,
-    header: keyof Omit<DataShape, OmittedColumns>
+    header: keyof Omit<DataShape, OmittedColumns>,
   ) => string;
   /** Adds additional classes to the default header's classes */
-  getHeaderCellClass?: (
-    columnName: keyof Omit<DataShape, OmittedColumns>
-  ) => string;
+  getHeaderCellClass?: (columnName: keyof Omit<DataShape, OmittedColumns>) => string;
   /** Replaces the default row container classes with the result of this function */
   getRowContainerClass?: (defaultClasses: string) => string;
   /** Adds horizontal margin to the rows and header */
@@ -123,6 +115,10 @@ export interface MultiColumnListBaseProps<
   sortDirection?: 'ascending' | 'descending';
   /** The column being styled as sorted */
   sortedColumn?: keyof Omit<DataShape, OmittedColumns>;
+  /** Pins the first column in place so that it will remain visible when scrolled out of view. */
+  stickyFirstColumn?: boolean;
+  /** Pins the last column in place so that it will remain visible when scrolled out of view. */
+  stickyLastColumn?: boolean;
   /** If alternating rows should have different colors, resulting in a striped appearance */
   striped?: boolean;
   /** The total number of rows, for virtualization or pagination */
@@ -141,7 +137,7 @@ export interface MultiColumnListBaseProps<
   /** Callback for when a column is clicked */
   onHeaderClick?: (
     e: MouseEvent,
-    meta: { name: keyof Omit<DataShape, OmittedColumns>; alias: ReactNode }
+    meta: { name: keyof Omit<DataShape, OmittedColumns>; alias: ReactNode },
   ) => void;
 }
 
@@ -175,7 +171,7 @@ export type MultiColumnListMarkProps = RequireAllOrNone<
 
 export type MultiColumnListProps<
   DataShape,
-  OmittedColumns extends string
+  OmittedColumns extends string,
 > = MultiColumnListBaseProps<DataShape, OmittedColumns> &
   MultiColumnListPagingTypes &
   MultiColumnListMarkProps;
@@ -204,5 +200,5 @@ export type MultiColumnListProps<
  */
 export default class MultiColumnList<
   DataShape,
-  OmittedColumns extends string = ''
+  OmittedColumns extends string = '',
 > extends Component<MultiColumnListProps<DataShape, OmittedColumns>> {}
