@@ -156,8 +156,15 @@ export { default as SearchField } from './lib/SearchField';
 export { default as ConflictDetectionBanner } from './lib/ConflictDetectionBanner';
 export {
   AdvancedSearch,
+  AdvancedSearchProps,
+  AdvancedSearchRow,
+  AdvancedSearchRowFormatter,
+  useAdvancedSearch,
   defaultQueryBuilder as defaultAdvancedSearchQueryBuilder,
   BOOLEAN_OPERATORS as ADVANCED_SEARCH_BOOLEAN_OPERATORS,
+  MATCH_OPTIONS as ADVANCED_SEARCH_MATCH_OPTIONS,
+  FIELD_NAMES as ADVANCED_SEARCH_FIELD_NAMES,
+  DEFAULT_SEARCH_OPTION as ADVANCED_SEARCH_DEFAULT_SEARCH_OPTION,
 } from './lib/AdvancedSearch';
 
 /* specific use */
