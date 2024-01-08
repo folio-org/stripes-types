@@ -52,37 +52,42 @@ type StripesError = {
   throwErrors?: unknown;
 };
 
-type StripesResourceType = {
-  resultCount: number;
-  notes?: string | boolean;
-  filters?: string;
-} & {
-  // called recordsObj in code
-  [resourceName: string]: {
-    records?: unknown[];
-    hasLoaded?: boolean;
-    isPending?: boolean;
-    failed?: StripesError;
-    other?: unknown;
-    successfulMutations?: unknown[];
-  };
-};
-type StripesMutatorType = {
-  resultCount: {
-    replace: (count: number) => void;
-  };
-  resultOffset: {
-    replace: (offset: number) => void;
-  };
-  query: {
-    replace: (query: unknown) => void;
-    update: (query: unknown) => void;
-  };
-};
+type StripesResourceType =
+  | ({
+      resultCount: number;
+      notes?: string | boolean;
+      filters?: string;
+    } & {
+      // called recordsObj in code
+      [resourceName: string]: {
+        records?: unknown[];
+        hasLoaded?: boolean;
+        isPending?: boolean;
+        failed?: StripesError;
+        other?: unknown;
+        successfulMutations?: unknown[];
+      };
+    })
+  | unknown; // these types may not be perfect; putting this to avoid errors
+
+type StripesMutatorType =
+  | {
+      resultCount: {
+        replace: (count: number) => void;
+      };
+      resultOffset: {
+        replace: (offset: number) => void;
+      };
+      query: {
+        replace: (query: unknown) => void;
+        update: (query: unknown) => void;
+      };
+    }
+  | unknown; // these types may not be perfect; putting this to avoid errors
 
 export interface StripesConnectedSourceProps {
   // key is from resourceName
-  parentResources: StripesResourceType;
+  parentResources?: StripesResourceType;
   resources?: StripesResourceType;
   parentMutator?: StripesMutatorType;
   mutator?: StripesMutatorType;

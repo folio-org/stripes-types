@@ -78,4 +78,4 @@ export interface AdvancedSearchProps {
  * />
  * ```
  */
-export default function AdvancedSearch(props: AdvancedSearchProps): ReactNode;
+export default function AdvancedSearch(props: AdvancedSearchProps): JSX.Element;
