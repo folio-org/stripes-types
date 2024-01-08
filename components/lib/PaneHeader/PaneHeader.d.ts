@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactNode, RefObject } from 'react';
+import { FunctionComponent, ReactNode, Ref } from 'react';
 import { DropdownMenuFunction } from '../Dropdown/Dropdown';
 
 export interface PaneHeaderDefaultProps {
@@ -40,7 +40,7 @@ export interface PaneHeaderDefaultProps {
   /** If the title should be auto focused on mount */
   paneTitleAutoFocus?: boolean;
   /** A reference to the header of the pane */
-  paneTitleRef?: RefObject<HTMLDivElement>;
+  paneTitleRef?: Ref<HTMLDivElement>;
 }
 
 export interface PaneHeaderOverriddenProps {
@@ -48,9 +48,7 @@ export interface PaneHeaderOverriddenProps {
   header: ReactNode;
 }
 
-export type PaneHeaderProps =
-  | PaneHeaderDefaultProps
-  | PaneHeaderOverriddenProps;
+export type PaneHeaderProps = PaneHeaderDefaultProps | PaneHeaderOverriddenProps;
 
 /**
  * A pane's header
