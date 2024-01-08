@@ -1,6 +1,5 @@
-import { ApolloError } from 'apollo-client';
-import { ApolloConnectedSourceProps, ConnectedSource, StripesError } from './ConnectedSource';
 import Logger from '../../../../util/logger';
+import { ApolloConnectedSourceProps, ApolloError, ConnectedSource } from './ConnectedSource';
 
 export default class ApolloConnectedSource implements ConnectedSource {
   constructor(props: ApolloConnectedSourceProps, logger: Logger, resourceName?: string);
@@ -10,6 +9,7 @@ export default class ApolloConnectedSource implements ConnectedSource {
   pending(): boolean;
   loaded(): boolean;
   failure(): ApolloError | null | undefined;
+
   failureMessage(): string;
   fetchMore(increment: number): void;
   successfulMutations(): unknown[];

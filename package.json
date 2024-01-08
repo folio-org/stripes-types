@@ -34,7 +34,6 @@
   },
   "dependencies": {
     "@folio/stripes-react-hotkeys": "^3.0.0",
-    "apollo-client": "^2.6.10",
     "ky": "^0.33.3",
     "moment": "^2.29.4",
     "popper.js": "^1.16.1",

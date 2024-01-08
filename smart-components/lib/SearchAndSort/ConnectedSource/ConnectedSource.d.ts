@@ -1,6 +1,12 @@
-import { ApolloError } from 'apollo-client';
 import Logger from '../../../../util/logger';
 import { QueryFunction } from '../makeQueryFunction';
+
+type ApolloError = {
+  message: string;
+  graphQLErrors: unknown[];
+  networkError: Error | null;
+  extraInfo: any;
+};
 
 export interface ApolloConnectedSourceProps {
   apolloResource?: string;
