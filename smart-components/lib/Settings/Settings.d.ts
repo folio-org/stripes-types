@@ -1,6 +1,5 @@
-import { ReactNode, ComponentType, RefObject, Component } from 'react';
+import { Component, ComponentType, ReactNode, Ref } from 'react';
 import { PaneProps } from '../../../components';
-import { StripesType } from '../../../core';
 
 export interface SettingsProps {
   additionalRoutes?: ReactNode[];
@@ -12,7 +11,7 @@ export interface SettingsProps {
     perm?: string;
   }[];
   paneTitle?: ReactNode;
-  paneTitleRef?: RefObject<HTMLDivElement>;
+  paneTitleRef?: Ref<HTMLDivElement>;
   location: Location;
   showSettings?: boolean;
   forceRender: number;

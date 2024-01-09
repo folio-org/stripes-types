@@ -18,26 +18,59 @@ export const LocationSelection: any;
 export const PasswordValidationField: any;
 export const PersistedPaneset: any;
 export const ProxyManager: any;
-export const SearchAndSort: any;
-export const SearchAndSortQuery: any;
-export const SearchAndSortNoResultsMessage: any;
-export const SearchAndSortResetButton: any;
-export const SearchAndSortSearchButton: any;
-export const CheckboxFilter: any;
-export const ExpandFilterPaneButton: any;
-export const CollapseFilterPaneButton: any;
-export const MultiSelectionFilter: any;
-export const DateRangeFilter: any;
-export const makeQueryFunction: any;
-export const makeConnectedSource: any;
-export const StripesConnectedSource: any;
-export const ApolloConnectedSource: any;
-export const getNsKey: any;
-export const mapNsKeys: any;
-export const removeNsKeys: any;
-export const parseFilters: any;
-export const deparseFilters: any;
-export const buildUrl: any;
+
+export { default as SearchAndSort, SearchAndSortProps } from './lib/SearchAndSort';
+export { default as SearchAndSortQuery } from './lib/SearchAndSort/SearchAndSortQuery';
+export {
+  default as SearchAndSortNoResultsMessage,
+  SearchAndSortNoResultsMessageProps,
+} from './lib/SearchAndSort/components/NoResultsMessage';
+export {
+  default as SearchAndSortResetButton,
+  SearchAndSortResetButtonProps,
+} from './lib/SearchAndSort/components/ResetButton';
+export {
+  default as SearchAndSortSearchButton,
+  SearchAndSortSearchButtonProps,
+} from './lib/SearchAndSort/components/SearchButton';
+export {
+  default as CheckboxFilter,
+  CheckboxFilterProps,
+} from './lib/SearchAndSort/components/CheckboxFilter';
+export {
+  default as ExpandFilterPaneButton,
+  ExpandFilterPaneButtonProps,
+} from './lib/SearchAndSort/components/ExpandFilterPaneButton';
+export {
+  default as CollapseFilterPaneButton,
+  CollapseFilterPaneButtonProps,
+} from './lib/SearchAndSort/components/CollapseFilterPaneButton';
+export {
+  default as MultiSelectionFilter,
+  MultiSelectionFilterProps,
+} from './lib/SearchAndSort/components/MultiSelectionFilter';
+export {
+  default as DateRangeFilter,
+  DateRangeFilterProps,
+} from './lib/SearchAndSort/components/DateRangeFilter';
+
+export { default as makeQueryFunction, QueryFunction } from './lib/SearchAndSort/makeQueryFunction';
+export { default as advancedSearchQueryToRows } from './lib/SearchAndSort/advancedSearchQueryToRows';
+
+export {
+  default as makeConnectedSource,
+  ConnectedSource,
+  ConnectedSourceProps,
+  ApolloConnectedSourceProps,
+  StripesConnectedSourceProps,
+} from './lib/SearchAndSort/ConnectedSource';
+export { default as StripesConnectedSource } from './lib/SearchAndSort/ConnectedSource/StripesConnectedSource';
+export { default as ApolloConnectedSource } from './lib/SearchAndSort/ConnectedSource/ApolloConnectedSource';
+
+export * from './lib/SearchAndSort/nsQueryFunctions';
+export * from './lib/SearchAndSort/parseFilters';
+
+export { default as buildUrl } from './lib/SearchAndSort/buildUrl';
 
 export { default as Settings, SettingsProps } from './lib/Settings';
 
@@ -62,6 +95,5 @@ export const useRemoteStorageMappings: any;
 export const useSetRef: any;
 export const useSetRefOnFocus: any;
 export const usePrevious: any;
-export const ColumnManager: any;
-export const ColumnManagerMenu: any;
-export const useColumnManager: any;
+
+export * from './lib/ColumnManager';
