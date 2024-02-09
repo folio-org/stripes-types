@@ -6,7 +6,7 @@ export interface PaneProps extends AriaAttributes {
   /**
    * Activates the action menu dropdown; function must return a node/component
    * (probably a `<MenuSection>`)
-   * @deprecated use {@link renderHeader} instead
+   * For advanced usage, use {@link renderHeader} instead
    */
   actionMenu?: PaneHeaderDefaultProps['actionMenu'];
   /**
@@ -31,13 +31,13 @@ export interface PaneProps extends AriaAttributes {
    * - A `false` value will not render a button
    * - A `true` value will render a button in the firstMenu (left side in ltr languages)
    * - A `"last"` value will render a button in the lastMenu (right side in ltr languages)
-   * @deprecated use {@link renderHeader} instead
+   * For advanced usage, use {@link renderHeader} instead
    */
   dismissible?: PaneHeaderDefaultProps['dismissible'];
   /**
    * Component (probably a `<PaneMenu>`) to render at the beginning of the header
    * (top left in ltr languages)
-   * @deprecated use {@link renderHeader} instead
+   * For advanced usage, use {@link renderHeader} instead
    */
   firstMenu?: PaneHeaderDefaultProps['firstMenu'];
   /** If true, removes the default min-width applied to the pane's contents */
@@ -51,7 +51,7 @@ export interface PaneProps extends AriaAttributes {
   /**
    * Component (probably a `<PaneMenu>`) to render at the end of the header
    * (top right in ltr languages)
-   * @deprecated use {@link renderHeader} instead
+   * For advanced usage, use {@link renderHeader} instead
    */
   lastMenu?: PaneHeaderDefaultProps['lastMenu'];
   /**
@@ -61,7 +61,7 @@ export interface PaneProps extends AriaAttributes {
   noOverflow?: boolean;
   /**
    * Callback for when the pane is closed using its close button (see `dismissible` prop)
-   * @deprecated use {@link renderHeader} instead
+   * For advanced usage, use {@link renderHeader} instead
    */
   onClose?: () => void;
   /** Callback for when the pane is mounted */
@@ -70,18 +70,18 @@ export interface PaneProps extends AriaAttributes {
   padContent?: boolean;
   /**
    * Add a subtitle to the pane, as a node or string (recommended).
-   * @deprecated use {@link renderHeader} instead
+   * For advanced usage, use {@link renderHeader} instead
    */
   paneSub?: PaneHeaderDefaultProps['paneSub'];
   /**
    * Add a title to the pane, as a node or string (recommended).
    * This will be enclosed with a `<h2>` for accessibility
-   * @deprecated use {@link renderHeader} instead
+   * For advanced usage, use {@link renderHeader} instead
    */
   paneTitle?: PaneHeaderDefaultProps['paneTitle'];
   /**
    * A reference to the header of the pane
-   * @deprecated use {@link renderHeader} instead
+   * For advanced usage, use {@link renderHeader} instead
    */
   paneTitleRef?: PaneHeaderDefaultProps['paneTitleRef'];
   /**
