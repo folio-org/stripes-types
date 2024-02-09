@@ -11,7 +11,7 @@ export interface PaneProps extends AriaAttributes {
   actionMenu?: PaneHeaderDefaultProps['actionMenu'];
   /**
    * Adds an icon to the header.  Expects an `<AppIcon>` from `stripes-core`.
-   * @deprecated use {@link renderHeader} instead
+   * For advanced usage, use {@link renderHeader} instead
    */
   appIcon?: PaneHeaderDefaultProps['appIcon'];
   /**
