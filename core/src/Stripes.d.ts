@@ -2,6 +2,9 @@ import { Requireable } from 'react';
 
 /** Type of the `stripes` object */
 export interface StripesType {
+  /** The current session's currency */
+  currency: string;
+
   /**
    * Check if the current user has a given permission
    *
