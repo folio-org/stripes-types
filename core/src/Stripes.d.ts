@@ -36,6 +36,8 @@ export interface StripesType {
 export const stripesShape: Requireable<StripesType>;
 
 export class Stripes implements StripesType {
+  currency: string;
+
   hasPerm(perm: string): boolean | undefined;
   hasInterface(interface: string, version?: string): boolean | string | 0 | undefined;
 
