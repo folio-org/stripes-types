@@ -211,7 +211,6 @@ export {
 } from './util/currencies';
 
 export { default as countries, countriesByCode, countryCodes } from './util/countries';
-
 export { formattedLanguageName, languageOptions, default as languages } from './util/languages';
 
 export { default as timezones } from './util/timezones';
