@@ -22,7 +22,7 @@ export type FilterGroupsConfigValue =
  */
 export type FilterGroupsConfigGroup = {
   /** The human-readable label that is used when presenting the group on a page */
-  label: string;
+  label: ReactNode;
   /** The name used internally for the filter group */
   name: string;
   /**
