@@ -38,7 +38,7 @@ export interface MultiColumnListBaseProps<DataShape, OmittedColumns extends stri
   /** If a column should show overflow */
   columnOverflow?: Record<keyof Omit<DataShape, OmittedColumns>, boolean>;
   /** Set widths for columns, either as direct widths or min/max pixels */
-  columnWidths?: Record<keyof Omit<DataShape, OmittedColumns>, ColumnWidth>;
+  columnWidths?: Partial<Record<keyof Omit<DataShape, OmittedColumns>, ColumnWidth>>;
   /** A ref to the MCL's container */
   containerRef?: RefObject<HTMLDivElement>;
   /** The list's data */
