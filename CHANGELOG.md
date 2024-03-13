@@ -1,6 +1,8 @@
 # Change history for stripes-types
 
-## 2.1.0 in progress
+## 2.2.0 in progress
+
+## [2.1.0](https://github.com/folio-org/stripes-types/tree/v2.1.0) (2024-03-13)
 
 * [STRIPES-893] align stripes-components LayoutGrid to avoid `react-flexbox-grid`
 * [STTYPES-11] bump `type-fest` to `>= 4.12.0` for typescript v5.4 compatibility
