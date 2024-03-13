@@ -38,7 +38,7 @@
     "ky": "^0.33.3",
     "moment": "^2.29.4",
     "popper.js": "^1.16.1",
-    "type-fest": "^3.9.0"
+    "type-fest": "^4.12.0"
   },
   "devDependencies": {
     "@folio/eslint-config-stripes": "^7.0.0",
