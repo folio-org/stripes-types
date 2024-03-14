@@ -2,8 +2,8 @@ import { FunctionComponent, MouseEventHandler, ReactNode } from 'react';
 import { ButtonStyle } from '../Button';
 
 export interface ConfirmationModalProps {
-  /** The modal's H1 tag and ARIA-label */
-  heading: string;
+  /** The modal's H1 tag */
+  heading: ReactNode;
   /** The modal's message, rendered within a `<p>` tag (unless overrode in `bodyTag`) */
   message?: ReactNode;
 
