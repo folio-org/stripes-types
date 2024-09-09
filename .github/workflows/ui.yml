@@ -13,3 +13,6 @@ jobs:
       # tsc instead of jest, but easiest to run it in the same manner
       jest-enabled: true
       jest-test-command: yarn test
+      sonar-sources: .
+      compile-translations: false
+      generate-module-descriptor: false
