@@ -1,4 +1,4 @@
-import { Component, CSSProperties, ReactNode, RefObject } from 'react';
+import { Component, ComponentType, CSSProperties, ReactNode, RefObject } from 'react';
 import { HotKeysProps } from '../HotKeys';
 import { DefaultAccordionHeaderProps } from './headers/DefaultAccordionHeader';
 
@@ -20,7 +20,7 @@ export type AccordionProps<HeaderProps = DefaultAccordionHeaderProps> = Partial<
   /** If the accordion should be disabled */
   disabled?: boolean;
   /** Supplies a custom header */
-  header?: ReactNode;
+  header?: ReactNode | ComponentType<HeaderProps>;
   /** Adds props to the header (additional props on the root `<Accordion>` will also be passed) */
   headerProps?: Partial<HeaderProps>;
   /** The id of the accordion */
