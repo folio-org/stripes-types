@@ -32,7 +32,7 @@ export const Redirect: any;
 export const ModuleHierarchyContext: any;
 export const ModuleHierarchyProvider: any;
 export const useModuleHierarchy: any;
-export const useNamespace: any;
+export * from './src/components/Namespace';
 export const withNamespace: any;
 export const tVisitedContext: any;
 export const tVisited: any;
