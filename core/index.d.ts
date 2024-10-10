@@ -41,3 +41,5 @@ export const supportedNumberingSystems: any;
 export const userLocaleConfig: any;
 export const queryLimit: any;
 export const init: any;
+
+export * as RTR_CONSTANTS from './src/components/Root/constants';
