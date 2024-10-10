@@ -3,6 +3,7 @@ export * from './batchFetch';
 export * from './calculateFundAmount';
 export * from './createClearFilterHandler';
 export * from './downloadBase64';
+export * from './errorHandling';
 export * from './EventEmitter';
 export * from './fetchAllRecords';
 export * from './fetchExportDataByIds';

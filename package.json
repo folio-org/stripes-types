@@ -11,6 +11,11 @@
     "node": ">=10.0.0"
   },
   "exports": {
+    "./acq-components": {
+      "types": {
+        "default": "./acq-components/index.d.ts"
+      }
+    },
     "./components": {
       "types": {
         "default": "./components/index.d.ts"
