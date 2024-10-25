@@ -1,6 +1,9 @@
 # Change history for stripes-types
 
-## 2.2.0 in progress
+## 2.3.0 in progress
+
+## [2.2.0](https://github.com/folio-org/stripes-types/tree/v2.2.0) (2024-10-11)
+
 * [[UISACQCOMP-219](https://folio-org.atlassian.net/browse/UISACQCOMP-219)] Add typings for the ACQ `ResponseErrorsContainer` utils.
 
 ## [2.1.0](https://github.com/folio-org/stripes-types/tree/v2.1.0) (2024-03-13)
