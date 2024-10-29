@@ -1,5 +1,9 @@
 # Change history for stripes-types
 
+## [2.2.1](https://github.com/folio-org/stripes-types/tree/v2.2.1) (2024-10-29)
+
+* [STTYPES-12](https://folio-org.atlassian.net/browse/STTYPES-12) Correct the GA script to build on `tag` events.`
+
 ## [2.2.0](https://github.com/folio-org/stripes-types/tree/v2.2.0) (2024-10-11)
 
 * [UISACQCOMP-219](https://folio-org.atlassian.net/browse/UISACQCOMP-219) Add typings for the ACQ `ResponseErrorsContainer` utils.
