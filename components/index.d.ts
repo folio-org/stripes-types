@@ -13,7 +13,11 @@ export {
   staticFirstWeekDay,
   staticLangCountryCodes,
 } from './lib/Datepicker';
-export { getLocaleDateFormat, getLocalizedTimeFormatInfo } from './util/dateTimeUtils';
+export {
+  dayjs,
+  getLocaleDateFormat,
+  getLocalizedTimeFormatInfo,
+} from './util/dateTimeUtils';
 export { default as DateRangeWrapper } from './lib/DateRangeWrapper';
 export { default as FormattedDate } from './lib/FormattedDate';
 export { default as FormattedTime } from './lib/FormattedTime';

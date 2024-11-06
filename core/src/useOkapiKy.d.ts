@@ -1,3 +1,7 @@
 import type ky from 'ky';
 
-export default function useOkapiKy(): typeof ky;
+export interface useOkapiKyOptions {
+  tenant?: string;
+}
+
+export default function useOkapiKy({ tenant }: useOkapiKyOptions): typeof ky;
