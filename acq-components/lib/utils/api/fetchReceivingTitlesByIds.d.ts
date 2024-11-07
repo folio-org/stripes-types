@@ -1,7 +1,7 @@
 import type {
   HTTPClient,
   HTTPClientOptions,
-} from '@folio/stripes-acq-components';
+} from '../../typing';
 
 import { fetchReceivingTitles } from './fetchReceivingTitles';
 
