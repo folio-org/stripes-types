@@ -4,4 +4,4 @@ export interface useOkapiKyOptions {
   tenant?: string;
 }
 
-export default function useOkapiKy(options: useOkapiKyOptions): typeof ky;
+export default function useOkapiKy(options?: useOkapiKyOptions): typeof ky;
