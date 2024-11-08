@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "@folio/stripes-react-hotkeys": "^3.0.0",
+    "dayjs": "^1.11.10",
     "history": "^4.10.1",
     "ky": "^0.33.3",
     "moment": "^2.29.4",

@@ -15,3 +15,5 @@ export const ERROR_CODE_CONFLICT: 'conflict';
 export const DICT_IDENTIFIER_TYPES: 'identifierTypes';
 export const DICT_CONTRIBUTOR_NAME_TYPES: 'contributorNameTypes';
 export const emptyArrayFilterValue: '/respectAccents []';
+
+export const ALL_RECORDS_CQL = 'cql.allRecords=1';

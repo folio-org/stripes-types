@@ -1,4 +1,5 @@
 export * from './useAccordionToggle';
+export * from './useAddresses';
 export * from './useAcqMethodsOptions';
 export * from './useAsyncDebounce';
 export * from './useCampuses';

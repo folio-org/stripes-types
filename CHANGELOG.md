@@ -2,6 +2,8 @@
 
 ## 2.3.0 in progress
 
+[[STTYPES-13](https://folio-org.atlassian.net/browse/STTYPES-13)] Add actual types for `acq-components`, `components`, `core` and `smart-components`.
+
 ## [2.2.0](https://github.com/folio-org/stripes-types/tree/v2.2.0) (2024-10-11)
 
 * [[UISACQCOMP-219](https://folio-org.atlassian.net/browse/UISACQCOMP-219)] Add typings for the ACQ `ResponseErrorsContainer` utils.

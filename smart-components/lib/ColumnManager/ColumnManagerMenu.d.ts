@@ -9,6 +9,8 @@ export interface ColumnManagerMenuProps {
   prefix: string;
   /** An array of visible column keys */
   visibleColumns: string[];
+  /** A function to toggle column visibility  */
+  toggleColumn: (key: string) => void;
 }
 
 /**
