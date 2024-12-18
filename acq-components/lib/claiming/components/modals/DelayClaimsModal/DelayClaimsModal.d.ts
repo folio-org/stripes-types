@@ -8,6 +8,7 @@ import {
 interface DelayClaimsModalOwnProps {
   claimsCount: number;
   disabled: boolean;
+  message?: React.JSX.Element,
   onCancel: () => void;
   open: boolean;
 }
