@@ -1,7 +1,15 @@
 interface useRecordsSelectReturn<T> {
   allRecordsSelected: boolean;
   isRecordSelected: ({ item: T });
-  resetSelectedRecords: () => void;
+  resetAllSelectedRecords: () => void;
+  /*
+   * Clear selected records with provided ids.
+   */
+  resetSelectedRecordsByIds: (ids: string[]) => void;
+  /*
+   * Clear selected records except the ones with provided ids.
+   */
+  resetOtherSelectedRecordsByIds: (ids: string[]) => void;
   selectedRecordsLength: number;
   selectedRecordsMap: Record<string, T>;
   selectRecord: (record: T) => void;
