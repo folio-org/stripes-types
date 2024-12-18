@@ -9,6 +9,7 @@ export * from './AcqUnits';
 export * from './AmountWithCurrencyField';
 export * from './apiHooks';
 export * from './BooleanFilter';
+export * from './claiming';
 export * from './constants';
 export * from './ContributorDetails';
 export * from './CountryFilter';

@@ -15,6 +15,7 @@ export * from './useLocations';
 export * from './useModalToggle';
 export * from './useOrganization';
 export * from './usePaneFocus';
+export * from './usePiecesStatusBatchUpdate';
 export * from './useShowCallout';
 export * from './useToggle';
 export * from './useTranslatedCategories';
