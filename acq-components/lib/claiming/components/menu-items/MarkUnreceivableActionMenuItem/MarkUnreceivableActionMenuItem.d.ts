@@ -3,4 +3,4 @@ interface MarkUnreceivableActionMenuItemProps {
   onClick: (e?: Event) => void;
 }
 
-export declare function MarkUnreceivableActionMenuItem(props: MarkUnreceivableActionMenuItemProps): any;
+export declare function MarkUnreceivableActionMenuItem(props: MarkUnreceivableActionMenuItemProps): React.JSX.Element;

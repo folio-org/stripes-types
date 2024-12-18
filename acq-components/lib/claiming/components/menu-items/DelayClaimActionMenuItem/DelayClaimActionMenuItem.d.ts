@@ -3,4 +3,4 @@ interface DelayClaimActionMenuItemProps {
   onClick: (e?: Event) => void;
 }
 
-export declare function DelayClaimActionMenuItem(props: DelayClaimActionMenuItemProps): any;
+export declare function DelayClaimActionMenuItem(props: DelayClaimActionMenuItemProps): React.JSX.Element;
