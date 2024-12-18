@@ -1,1 +1,1 @@
-export { useClaimsSend } from './useClaimsSend';
+export { ClaimingPieceResult, useClaimsSend } from './useClaimsSend';

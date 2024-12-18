@@ -1,8 +1,11 @@
 interface SendClaimsData {
   claimingPieceIds: string[];
+  claimingInterval: number;
+  internalNote?: string;
+  externalNote?: string;
 }
 
-export interface ClaimingResult {
+export interface ClaimingPieceResult {
   pieceId: string;
   type: 'success' | 'failure';
   error?: {
@@ -13,7 +16,7 @@ export interface ClaimingResult {
 }
 
 export interface SendClaimsResponse {
-  claimingPieceResults: ClaimingResult[];
+  claimingPieceResults: ClaimingPieceResult[];
   totalRecords: number;
 }
 

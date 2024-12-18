@@ -1,0 +1,1 @@
+export { getClaimingIntervalFromDate } from './getClaimingIntervalFromDate';
