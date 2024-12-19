@@ -154,7 +154,7 @@ export type MultiColumnListPagingTypes =
       pagingCanGoNext?: boolean;
       pagingCanGoPrevious?: boolean;
       hidePageIndices?: boolean;
-      /** optional prop for manually controlling the page numbers indicated on the prev/next controls **/
+      /** optional prop for manually controlling the page numbers indicated on the prev/next controls */
       pagingOffset? : number;
     }
   | {
