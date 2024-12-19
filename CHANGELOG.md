@@ -2,8 +2,8 @@
 
 ## 2.3.0 in progress
 
-[[STTYPES-13](https://folio-org.atlassian.net/browse/STTYPES-13)] Add actual types for `acq-components`, `components`, `core` and `smart-components`.
-[[STTYPES-16](https://folio-org.atlassian.net/browse/STTYPES-16)] Add `pagingOffset` prop to `<MultiColumnList>` paging props.
+* [[STTYPES-13](https://folio-org.atlassian.net/browse/STTYPES-13)] Add actual types for `acq-components`, `components`, `core` and `smart-components`.
+* [[STTYPES-16](https://folio-org.atlassian.net/browse/STTYPES-16)] Add `pagingOffset` prop to `<MultiColumnList>` paging props.
 
 ## [2.2.0](https://github.com/folio-org/stripes-types/tree/v2.2.0) (2024-10-11)
 
