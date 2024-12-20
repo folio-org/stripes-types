@@ -29,3 +29,5 @@ export default function stripesFinalForm<
 ): (
   Component: ComponentType<FormRenderProps<FormValues> & ComponentProps>
 ) => ComponentType<ComponentProps & Pick<FormProps<FormValues>, extractedProps>>;
+
+export type { FormProps, FormRenderProps } from 'react-final-form';

@@ -1,1 +1,4 @@
-export { ResponseErrorsContainer } from './ResponseErrorsContainer';
+export {
+  ErrorHandlingStrategy,
+  ResponseErrorsContainer,
+} from './ResponseErrorsContainer';
