@@ -7,7 +7,7 @@ export interface ResponseErrorsContainerBody {
 }
 
 export interface ErrorHandlingStrategy {
-  handle(errors: ResponseErrorsContainer): void;
+  handle(errors: ResponseErrorsContainer): void | Promise<void>;
 }
 
 /**
