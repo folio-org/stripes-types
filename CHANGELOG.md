@@ -2,8 +2,9 @@
 
 ## 2.3.0 in progress
 
-[STTYPES-13](https://folio-org.atlassian.net/browse/STTYPES-13) Add actual types for `acq-components`, `components`, `core` and `smart-components`.
-[STTYPES-15](https://folio-org.atlassian.net/browse/STTYPES-15) Provide TS definitions for claiming feature in the `stripes-acq-components` library.
+* [[STTYPES-13](https://folio-org.atlassian.net/browse/STTYPES-13)] Add actual types for `acq-components`, `components`, `core` and `smart-components`.
+* [[STTYPES-15](https://folio-org.atlassian.net/browse/STTYPES-15)] Provide TS definitions for claiming feature in the `stripes-acq-components` library.
+* [[STTYPES-16](https://folio-org.atlassian.net/browse/STTYPES-16)] Add `pagingOffset` prop to `<MultiColumnList>` paging props.
 
 ## [2.2.0](https://github.com/folio-org/stripes-types/tree/v2.2.0) (2024-10-11)
 
