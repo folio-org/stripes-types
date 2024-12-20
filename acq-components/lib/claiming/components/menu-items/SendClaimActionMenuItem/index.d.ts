@@ -1,0 +1,1 @@
+export { SendClaimActionMenuItem } from './SendClaimActionMenuItem';
