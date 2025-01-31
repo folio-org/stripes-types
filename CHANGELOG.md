@@ -1,6 +1,6 @@
 # Change history for stripes-types
 
-## 2.3.0 in progress
+## [2.3.0](https://github.com/folio-org/stripes-types/tree/v2.3.0) (2025-01-31)
 
 * [[STTYPES-13](https://folio-org.atlassian.net/browse/STTYPES-13)] Add actual types for `acq-components`, `components`, `core` and `smart-components`.
 * [[STTYPES-15](https://folio-org.atlassian.net/browse/STTYPES-15)] Provide TS definitions for claiming feature in the `stripes-acq-components` library.
