@@ -47,7 +47,7 @@
     "type-fest": "^4.12.0"
   },
   "devDependencies": {
-    "@folio/eslint-config-stripes": "^7.0.0",
+    "@folio/eslint-config-stripes": "^8.0.0",
     "@types/react": "^18.2.21",
     "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
