@@ -2,6 +2,8 @@
 
 ## 3.0.0 IN PROGRESS
 
+* [[STTYPES-18](https://folio-org.atlassian.net/browse/STTYPES-18)] Upgrade `@folio/stripes-*` dependencies.
+
 ## [2.3.0](https://github.com/folio-org/stripes-types/tree/v2.3.0) (2025-01-31)
 
 * [[STTYPES-13](https://folio-org.atlassian.net/browse/STTYPES-13)] Add actual types for `acq-components`, `components`, `core` and `smart-components`.
