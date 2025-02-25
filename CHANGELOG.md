@@ -3,6 +3,7 @@
 ## 3.0.0 IN PROGRESS
 
 * [[STTYPES-18](https://folio-org.atlassian.net/browse/STTYPES-18)] Upgrade `@folio/stripes-*` dependencies.
+* [[STTYPES-19](https://folio-org.atlassian.net/browse/STTYPES-19)] Upgrade `react-intl` to `^7.0.0`.
 
 ## [2.3.0](https://github.com/folio-org/stripes-types/tree/v2.3.0) (2025-01-31)
 
