@@ -1,4 +1,5 @@
 export * from './acqRowFormatter';
+export * from './api';
 export * from './batchFetch';
 export * from './calculateFundAmount';
 export * from './createClearFilterHandler';
@@ -14,6 +15,7 @@ export * from './formatDateTime';
 export * from './generateQueryTemplate';
 export * from './getAcqUnitsOptions';
 export * from './getAddresses';
+export * from './getAddressOptions';
 export * from './getAmountWithCurrency';
 export * from './getConfigSetting';
 export * from './getControlledVocabTranslations';

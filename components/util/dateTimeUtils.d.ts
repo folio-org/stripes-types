@@ -1,4 +1,20 @@
+import dayjs from 'dayjs';
+import 'dayjs/plugin/timezone';
+import 'dayjs/plugin/localeData';
+import 'dayjs/plugin/utc';
+import 'dayjs/plugin/customParseFormat';
+import 'dayjs/plugin/isoWeek';
+import 'dayjs/plugin/weekOfYear';
+import 'dayjs/plugin/weekday';
+import 'dayjs/plugin/arraySupport';
+import 'dayjs/plugin/objectSupport';
+import 'dayjs/plugin/isSameOrBefore';
+import 'dayjs/plugin/isSameOrAfter';
+import 'dayjs/plugin/isBetween';
+
 import { IntlShape } from 'react-intl';
+
+export { dayjs };
 
 export function getMomentLocalizedFormat(intl: IntlShape): string;
 

@@ -25,6 +25,7 @@ export const ORDER_PIECES_API: 'orders/pieces';
 export const PREFIXES_API: 'orders/configuration/prefixes';
 export const PRIVILEGED_CONTACTS_API: 'organizations-storage/privileged-contacts';
 export const REQUESTS_API: 'circulation/requests';
+export const RECEIVING_TITLES_API = 'orders/titles';
 export const SUFFIXES_API: 'orders/configuration/suffixes';
 export const TAGS_API: 'tags';
 export const TRANSACTIONS_API: 'finance/transactions';

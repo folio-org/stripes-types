@@ -14,7 +14,10 @@ export { default as Pluggable, PluggableProps } from './src/Pluggable';
 export const updateUser: any;
 export const coreEvents: any;
 
-export { default as useOkapiKy } from './src/useOkapiKy';
+export {
+  default as useOkapiKy,
+  useOkapiKyOptions,
+} from './src/useOkapiKy';
 
 export const withOkapiKy: any;
 export const useCustomFields: any;

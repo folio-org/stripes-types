@@ -1,6 +1,6 @@
 {
   "name": "@folio/stripes-types",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "Typings for the Stripes framework",
   "license": "Apache-2.0",
   "repository": "folio-org/stripes-types",
@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "@folio/stripes-react-hotkeys": "^3.0.0",
+    "dayjs": "^1.11.10",
     "history": "^4.10.1",
     "ky": "^0.33.3",
     "moment": "^2.29.4",
@@ -46,14 +47,14 @@
     "type-fest": "^4.12.0"
   },
   "devDependencies": {
-    "@folio/eslint-config-stripes": "^7.0.0",
+    "@folio/eslint-config-stripes": "^8.0.0",
     "@types/react": "^18.2.21",
     "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
     "final-form": "^4.20.9",
     "react": "^18.2.0",
     "react-final-form": "^6.5.9",
-    "react-intl": "^6.4.1",
+    "react-intl": "^7.1.5",
     "react-router-dom": "^5.2.0"
   },
   "peerDependencies": {
@@ -61,7 +62,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-final-form": "^6.5.9",
-    "react-intl": "^6.4.1",
+    "react-intl": "^7.1.5",
     "react-router-dom": "^5.2.0"
   },
   "scripts": {

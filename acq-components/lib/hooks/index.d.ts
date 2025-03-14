@@ -1,4 +1,5 @@
 export * from './useAccordionToggle';
+export * from './useAddresses';
 export * from './useAcqMethodsOptions';
 export * from './useAsyncDebounce';
 export * from './useCampuses';
@@ -14,6 +15,7 @@ export * from './useLocations';
 export * from './useModalToggle';
 export * from './useOrganization';
 export * from './usePaneFocus';
+export * from './usePiecesStatusBatchUpdate';
 export * from './useShowCallout';
 export * from './useToggle';
 export * from './useTranslatedCategories';

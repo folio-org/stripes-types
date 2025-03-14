@@ -2,6 +2,7 @@ export * from './acqCommands';
 export * from './api';
 export * from './constants';
 export * from './countries';
+export * from './customFields';
 export * from './events';
 export * from './invoice';
 export * from './item';
