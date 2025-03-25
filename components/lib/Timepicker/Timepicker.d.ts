@@ -1,8 +1,11 @@
-import { AriaAttributes, ComponentType, ReactNode, Ref } from 'react';
+import { AriaAttributes, ComponentType, InputHTMLAttributes, ReactNode, Ref } from 'react';
 import { IntlShape } from 'react-intl';
 import { PopperModifiers, PopperPlacement } from '../Popper';
+import { TextFieldProps } from '../TextField';
 
-export interface TimepickerProps extends AriaAttributes {
+export interface TimepickerProps
+  extends AriaAttributes,
+    Omit<TextFieldProps<string>, 'inputRef' | 'onChange'> {
   /** If the field should auto-focus on mount */
   autoFocus?: boolean;
   /** Disables the input field */
@@ -20,7 +23,9 @@ export interface TimepickerProps extends AriaAttributes {
   /** Popper modifiers */
   modifiers?: PopperModifiers;
   /** Fired anytime internal state changes */
-  onChange?: (e: Event, standardizedTime?: string) => void;
+  onChange?: (e: Event, standardizedTime: string, inputValue: string) => void;
+  /** If the user-visible (formatted) output should be passed on change events, or the standard HH:MM:00Z */
+  outputBackendValue?: boolean;
   /** Format a UTC value into the specified timezone */
   outputFormatter?: (props: {
     value: string | undefined;
@@ -47,6 +52,8 @@ export interface TimepickerProps extends AriaAttributes {
   showTimepicker?: boolean;
   /** Override the default timezone */
   timeZone?: string;
+  /** Outputs values to onChange as seen directly in the input box */
+  useInput?: boolean;
   /** Render to the global overlay, if the dropdown may be cut off due to some containing elements's overflow */
   usePortal?: boolean;
   /** The field's value */
