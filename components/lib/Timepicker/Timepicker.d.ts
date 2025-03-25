@@ -1,4 +1,4 @@
-import { AriaAttributes, ComponentType, InputHTMLAttributes, ReactNode, Ref } from 'react';
+import { AriaAttributes, ComponentType, ReactNode, Ref } from 'react';
 import { IntlShape } from 'react-intl';
 import { PopperModifiers, PopperPlacement } from '../Popper';
 import { TextFieldProps } from '../TextField';
