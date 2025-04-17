@@ -1,5 +1,9 @@
 # Change history for stripes-types
 
+## 4.0.0 (IN PROGRESS)
+
+* [[STTYPES-21](https://folio-org.atlassian.net/browse/STTYPES-21)] Update ACQ interfaces reflect BE changes: `userLimit` type (`number` → `string`) and schema cleanup.
+
 ## [3.0.1](https://github.com/folio-org/stripes-types/tree/v3.0.1) (2025-02-24)
 
 * [[STTYPES-20](https://folio-org.atlassian.net/browse/STTYPES-20)] Add missing `Timepicker` props.

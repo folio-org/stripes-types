@@ -14,8 +14,6 @@ declare namespace ACQ {
     acquisitionMethod: string;
     /** If true then line will be marked as available to export in the EDIFACT format or other format */
     automaticExport?: boolean;
-    /** Alerts associated with this purchase order line */
-    alerts?: OrderLine.Alert[];
     /** Whether or not there are cancellation restrictions for this purchase order line */
     cancellationRestriction?: boolean;
     /** Free-form notes related to cancellation restrictions */
@@ -76,8 +74,6 @@ declare namespace ACQ {
     receiptStatus?: OrderLine.ReceiptStatus;
     /** Renewal note for this purchase order line */
     renewalNote?: string;
-    /** A list of reporting codes associated with this purchase order line */
-    reportingCodes?: OrderLine.ReportingCode[];
     /** Who requested this purchase order line */
     requester?: string;
     /** Whether or not this is a rush order */
@@ -99,13 +95,6 @@ declare namespace ACQ {
   }
 
   namespace OrderLine {
-    interface Alert {
-      /** UUID of this alert record */
-      id?: string;
-      /** The alert text */
-      alert: string;
-    }
-
     /* not-stable: possibly changed in the future */
     interface Claim {
       /** Whether or not this purchase order line has been claimed */
@@ -186,7 +175,7 @@ declare namespace ACQ {
       /** Expected date the resource will be activated */
       expectedActivation?: string;
       /** The concurrent user-limit */
-      userLimit?: number;
+      userLimit?: string;
       /** UUID of the access provider */
       accessProvider?: string;
       /** License record */
@@ -249,15 +238,6 @@ declare namespace ACQ {
       receiptDue?: string | null;
       /** List of volumes included to the physical material */
       volumes: string[];
-    }
-
-    interface ReportingCode {
-      /** UUID of this reporting code record */
-      id?: string;
-      /** A reporting code */
-      code: string;
-      /** Description of this reporting code */
-      description?: string;
     }
 
     interface VendorDetail {
