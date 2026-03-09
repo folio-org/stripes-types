@@ -12,6 +12,7 @@ export * from './useLibraries';
 export * from './useLineHoldings';
 export * from './useLocaleDateFormat';
 export * from './useLocations';
+export * from './useMaterialTypes';
 export * from './useModalToggle';
 export * from './useOrganization';
 export * from './usePaneFocus';
