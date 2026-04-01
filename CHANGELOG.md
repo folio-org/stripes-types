@@ -1,5 +1,9 @@
 # Change history for stripes-types
 
+## IN PROGRESS
+
+* Commit `yarn.lock` to avoid future supply chain attacks. Refs STTYPES-25.
+
 ## [3.0.1](https://github.com/folio-org/stripes-types/tree/v3.0.1) (2025-02-24)
 
 * [[STTYPES-20](https://folio-org.atlassian.net/browse/STTYPES-20)] Add missing `Timepicker` props.
