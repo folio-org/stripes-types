@@ -1,5 +1,7 @@
 # Change history for stripes-types
 
+## [3.1.0](https://github.com/folio-org/stripes-types/tree/v3.1.0) (IN PROGRESS)
+
 ## [3.0.1](https://github.com/folio-org/stripes-types/tree/v3.0.1) (2025-02-24)
 
 * [[STTYPES-20](https://folio-org.atlassian.net/browse/STTYPES-20)] Add missing `Timepicker` props.
