@@ -3,6 +3,7 @@ export * from './api';
 export * from './batchFetch';
 export * from './calculateFundAmount';
 export * from './createClearFilterHandler';
+export * from './CQLBuilder';
 export * from './downloadBase64';
 export * from './errorHandling';
 export * from './EventEmitter';
