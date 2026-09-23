@@ -51,10 +51,10 @@ export interface DropdownTriggerBuiltinProps {
 export interface DropdownTriggerCustomProps {
   /** A custom function to render the trigger */
   renderTrigger: (props: {
-    getTriggerProps: (opts: {
+    getTriggerProps: (opts?: {
       onFocus?: FocusEventHandler<HTMLElement>;
       onBlur?: FocusEventHandler<HTMLElement>;
-    }) => void;
+    }) => { [key: string]: any };
     open: boolean;
     triggerRef: RefObject<Element>;
     onToggle: (e: Event) => void;

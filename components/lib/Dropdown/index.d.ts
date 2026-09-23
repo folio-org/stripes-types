@@ -1,1 +1,1 @@
-export { default, DropdownProps } from './Dropdown';
+export { default, DropdownProps, DropdownMenuPropFunctionProps, DropdownTriggerCustomProps } from './Dropdown';

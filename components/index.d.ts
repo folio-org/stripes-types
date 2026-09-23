@@ -121,7 +121,7 @@ export { default as Modal } from './lib/Modal';
 export { default as ModalFooter } from './lib/ModalFooter';
 export { default as Avatar } from './lib/Avatar';
 export { default as Callout, CalloutElement } from './lib/Callout';
-export { default as Dropdown, DropdownProps } from './lib/Dropdown';
+export { default as Dropdown, DropdownProps, DropdownMenuPropFunctionProps, DropdownTriggerCustomProps } from './lib/Dropdown';
 export { default as DropdownMenu, DropdownMenuProps } from './lib/DropdownMenu';
 export { default as DropdownButton } from './lib/DropdownButton';
 export { default as MenuSection } from './lib/MenuSection';
