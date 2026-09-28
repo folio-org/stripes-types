@@ -14,6 +14,7 @@ export type IconName =
   | 'arrow-left'
   | 'arrow-right'
   | 'arrow-up'
+  | 'bell'
   | 'bookmark'
   | 'calendar'
   | 'cancel'
