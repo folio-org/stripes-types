@@ -3,6 +3,7 @@
 ## [3.1.0](https://github.com/folio-org/stripes-types/tree/v3.1.0) (IN PROGRESS)
 
 * [[STTYPES-26](https://folio-org.atlassian.net/browse/STTYPES-26)] Update types definitions: `CQLBuilder`, `buildMultiOptionCqlQuery` - ACQ, and `SettingsProps`.
+* [STTYPES-27](https://folio-org.atlassian.net/browse/STTYPES-27) Adjust "Dropdown" and "NavButton" components type definitions.
 
 ## [3.0.1](https://github.com/folio-org/stripes-types/tree/v3.0.1) (2025-02-24)
 

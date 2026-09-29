@@ -23,6 +23,7 @@ export const withOkapiKy: any;
 export const useCustomFields: any;
 export const createReactQueryClient: any;
 export const AppContextMenu: any;
+export { NavButton } from './src/components/MainNav';
 export { default as IfInterface, IfInterfaceProps } from './src/components/IfInterface';
 export { default as IfPermission, IfPermissionProps } from './src/components/IfPermission';
 export const TitleManager: any;
